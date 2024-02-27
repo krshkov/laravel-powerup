@@ -11,7 +11,7 @@
     - Outline buttons
 */
 .btn {
-    @apply px-3 py-1.5 rounded-xl border font-semibold shadow;
+    @apply px-3 py-1.5 rounded-xl border border-transparent font-semibold shadow;
 }
 
 .btn-main {
