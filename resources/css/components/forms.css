@@ -23,13 +23,34 @@
         @apply flex items-center gap-4 color-main;
     }
 
+    .input-group label{
+        @apply mb-2
+    }
+
     .input-mismatch {
         @apply color-danger font-bold pl-4 pt-1;
+    }
+
+    .input-icon-group {
+        @apply relative;
+    }
+
+    .input-icon-group input, .input-icon-group select, .input-icon-group textarea {
+        padding-left: 34px;
+    }
+
+    .input-icon-group .input-icon {
+        @apply absolute;
+        width: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 10px;
     }
 }
 
 input, select, textarea {
-    @apply border-2 border-solid border-main shadow p-2 bg-transparent mt-2;
+    @apply border-2 border-solid border-main shadow p-2 bg-transparent;
     border-radius: 8px;
     max-width: var(--max-w-form);
 }

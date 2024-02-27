@@ -352,6 +352,14 @@
                             <input type="datetime-local" id="input">
                             <small class="input-mismatch">Err due input</small>
                         </div>
+                        <div class="input-group mt-4">
+                            <label for="input">Input Icon</label>
+                            <div class="input-icon-group">
+                                <x-vaadin-user class="input-icon"/>
+                                <input type="text" id="input">
+                            </div>
+                            <small class="input-mismatch">Err due input</small>
+                        </div>
                     </div>
                     <div>
                         <div class="input-inline-group mt-4">
@@ -365,14 +373,17 @@
                             <small class="input-mismatch">Err due input</small>
                         </div>
                         <div class="input-group mt-4">
-                            <label for="input">Select Input</label>
-                            <select id="input">
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                                <option value="4">Four</option>
-                                <option value="5">Five</option>
-                            </select>
+                            <label for="input">Select Icon</label>
+                            <div class="input-icon-group">
+                                <x-vaadin-fire class="input-icon"/>
+                                <select id="input">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="4">Four</option>
+                                    <option value="5">Five</option>
+                                </select>
+                            </div>
                             <small class="input-mismatch">Err due input</small>
                         </div>
                         <div class="input-inline-group mt-4">
@@ -390,6 +401,14 @@
                         <div class="input-group mt-4">
                             <label for="input">Textarea</label>
                             <textarea id="input" cols="30" rows="10" placeholder="Something..."></textarea>
+                            <small class="input-mismatch">Err due input</small>
+                        </div>
+                        <div class="input-group mt-4">
+                            <label for="input">Input Icon</label>
+                            <div class="input-icon-group">
+                                <x-vaadin-fire class="input-icon"/>
+                                <input type="text" id="input">
+                            </div>
                             <small class="input-mismatch">Err due input</small>
                         </div>
                     </div>
