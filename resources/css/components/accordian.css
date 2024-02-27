@@ -1,0 +1,80 @@
+/*
+- [ ]  **Accordion:**
+    - Simple accordion
+*/
+.accordion-group {
+    @apply relative;
+}
+
+.accordion-group:first-child {
+    @apply rounded-tl-2xl rounded-tr-2xl overflow-hidden;
+}
+
+.accordion-group:last-child {
+    @apply rounded-bl-2xl rounded-br-2xl overflow-hidden;
+}
+
+.accordion-on {
+    min-height: 40px;
+    @apply font-semibold text-white text-start w-full p-4;
+}
+
+.accordion-body {
+    @apply p-6 anim_fadeIn;
+}
+
+.accordion-group-main {
+    @apply accordion-group border-x-2 border-solid border-main shadow-red-600 shadow-2xl;
+}
+
+.accordion-group-main > .accordion-on {
+    @apply bg-main;
+}
+
+.accordion-group-success {
+    @apply accordion-group border-x-2 border-solid border-success shadow-success shadow-2xl;
+}
+
+.accordion-group-success > .accordion-on {
+    @apply bg-success;
+}
+
+.accordion-group-danger {
+    @apply accordion-group border-x-2 border-solid border-danger shadow-danger shadow-2xl;
+}
+
+.accordion-group-danger > .accordion-on {
+    @apply bg-danger;
+}
+
+.accordion-group-warning {
+    @apply accordion-group border-x-2 border-solid border-warning shadow-warning shadow-2xl;
+}
+
+.accordion-group-warning > .accordion-on {
+    @apply bg-warning;
+}
+
+.accordion-group-info {
+    @apply accordion-group border-x-2 border-solid border-info shadow-info shadow-2xl;
+}
+
+.accordion-group-info > .accordion-on {
+    @apply bg-info;
+}
+
+.accordion-group-light {
+    @apply accordion-group border-x-2 border-solid border-light shadow-light shadow-2xl;
+}
+
+.accordion-group-light > .accordion-on {
+    @apply bg-light;
+}
+
+.accordion-group-dark {
+    @apply accordion-group border-x-2 border-solid border-dark shadow-dark shadow-2xl;
+}
+
+.accordion-group-dark > .accordion-on {
+    @apply bg-gray-900;
+}

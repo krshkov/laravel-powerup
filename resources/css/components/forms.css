@@ -1,0 +1,95 @@
+/*
+- [ ]  **Forms:**
+    - Text input
+    - Textarea
+    - Select dropdown
+    - Checkboxes
+    - Radio buttons
+    - Switches or toggles
+    - Form validation styles
+*/
+@layer utilities {
+    :root {
+        --max-w-form: 600px;
+    }
+
+    .input-group {
+        padding-top: 20px;
+        @apply flex flex-col color-main;
+    }
+
+    .input-inline-group {
+        padding-top: 20px;
+        @apply flex items-center gap-4 color-main;
+    }
+
+    .input-mismatch {
+        @apply color-danger font-bold pl-4 pt-1;
+    }
+}
+
+input, select, textarea {
+    @apply border-2 border-solid border-main shadow p-2 bg-transparent mt-2;
+    border-radius: 8px;
+    max-width: var(--max-w-form);
+}
+
+input::placeholder, textarea::placeholder {
+    @apply color-main;
+}
+
+input[type=checkbox], input[type=radio] {
+    box-shadow: none;
+    accent-color: var(--maincolor);
+    border-color: var(--maincolor);
+}
+
+/*Chrome*/
+input[type='range'] {
+    @apply p-0 m-0 rounded-2xl;
+    box-shadow: none;
+    overflow: hidden;
+    max-width: var(--max-w-form);
+    -webkit-appearance: none;
+    background-color: transparent;
+    border-width: 2px;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: var(--maincolor);
+    margin-top: -1px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    background: #000000;
+    box-shadow: -600px 0 0 600px var(--maincolor);
+}
+
+
+/** FF*/
+input[type="range"]::-moz-range-progress {
+    background-color: var(--maincolor);
+}
+
+input[type="range"]::-moz-range-track {
+    background-color: transparent;
+}
+
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+    background-color: var(--maincolor);
+}
+
+input[type="range"]::-ms-fill-upper {
+    background-color: transparent;
+}
+
+input[type=file]::file-selector-button {
+    display: none;
+}

@@ -1,0 +1,141 @@
+/*
+- [ ]  **Buttons:**
+    - Primary button
+    - Secondary button
+    - Success button
+    - Danger button
+    - Warning button
+    - Info button
+    - Light button
+    - Dark button
+    - Outline buttons
+*/
+.btn {
+    @apply px-3 py-1.5 rounded-xl border font-semibold shadow;
+}
+
+.btn-main {
+    @apply btn color-white bg-main;
+}
+
+.btn-main.hoverable:hover {
+    z-index: 2;
+    @apply color-main bg-transparent border-solid border-main anim_scaleDown;
+}
+
+.btn-success {
+    @apply btn color-white bg-success;
+}
+
+.btn-success.hoverable:hover {
+    z-index: 2;
+    @apply color-success bg-transparent border-solid border-success anim_scaleDown;
+}
+
+.btn-danger {
+    @apply btn color-white bg-danger;
+}
+
+.btn-danger.hoverable:hover {
+    z-index: 2;
+    @apply color-danger bg-transparent border-solid border-danger anim_scaleDown;
+}
+
+.btn-warning {
+    @apply btn color-white bg-warning;
+}
+
+.btn-warning.hoverable:hover {
+    z-index: 2;
+    @apply color-warning bg-transparent border-solid border-warning anim_scaleDown;
+}
+
+.btn-info {
+    @apply btn color-white bg-info;
+}
+
+.btn-info.hoverable:hover {
+    z-index: 2;
+    @apply color-info bg-transparent border-solid border-info anim_scaleDown;
+}
+
+.btn-light {
+    @apply btn color-white bg-light;
+}
+
+.btn-light.hoverable:hover {
+    z-index: 2;
+    @apply color-light bg-transparent border-solid border-light anim_scaleDown;
+}
+
+.btn-dark {
+    @apply btn color-white bg-dark;
+}
+
+.btn-dark.hoverable:hover {
+    z-index: 2;
+    @apply color-dark bg-transparent border-solid border-dark anim_scaleDown;
+}
+
+.btn-outline-main {
+    @apply btn color-main border-solid border-main;
+}
+
+.btn-outline-main.hoverable:hover {
+    z-index: 2;
+    @apply bg-main color-white anim_scaleDown;
+}
+
+.btn-outline-success {
+    @apply btn color-success border-solid border-success;
+}
+
+.btn-outline-success.hoverable:hover {
+    z-index: 2;
+    @apply bg-success color-white anim_scaleDown;
+}
+
+.btn-outline-danger {
+    @apply btn color-danger border-solid border-danger;
+}
+
+.btn-outline-danger.hoverable:hover {
+    z-index: 2;
+    @apply bg-danger color-white anim_scaleDown;
+}
+
+.btn-outline-warning {
+    @apply btn color-warning border-solid border-warning;
+}
+
+.btn-outline-warning.hoverable:hover {
+    z-index: 2;
+    @apply bg-warning color-white anim_scaleDown;
+}
+
+.btn-outline-info {
+    @apply btn color-info border-solid border-info;
+}
+
+.btn-outline-info.hoverable:hover {
+    z-index: 2;
+    @apply bg-info color-white anim_scaleDown;
+}
+
+.btn-outline-light {
+    @apply btn color-light border-solid border-light;
+}
+
+.btn-outline-light.hoverable:hover {
+    z-index: 2;
+    @apply bg-light color-white anim_scaleDown;
+}
+
+.btn-outline-dark {
+    @apply btn color-dark border-solid border-dark;
+}
+
+.btn-outline-dark.hoverable:hover {
+    z-index: 2;
+    @apply bg-dark color-white anim_scaleDown;
+}

@@ -1,0 +1,148 @@
+/*
+- [ ]  **Tables:**
+    - Basic table styling
+    - Striped tables
+    - Hoverable tables
+    - Table with small cells
+*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+.table {
+    @apply border border-solid;
+}
+
+.table-borderless {
+    border: none !important;
+}
+
+.table-borderless tr > td:last-child {
+    @apply rounded-r-2xl;
+}
+
+.table-borderless tr > td:first-child {
+    @apply rounded-l-2xl;
+}
+
+.table-borderless td, .table-borderless th {
+    border: none !important;
+}
+
+.table-main {
+    @apply table border-main;
+}
+
+.table-main td, .table-main th {
+    @apply border border-solid border-main;
+}
+
+.table-main.table-hover tr:hover {
+    @apply bg-danger;
+}
+
+.table-success {
+    @apply table border-success;
+}
+
+.table-success td, .table-success th {
+    @apply border border-solid border-success;
+}
+
+.table-success.table-hover tr:hover {
+    @apply bg-green-300;
+}
+
+.table-danger {
+    @apply table border-danger;
+}
+
+.table-danger td, .table-danger th {
+    @apply border border-solid border-danger;
+}
+
+.table-danger.table-hover tr:hover {
+    @apply bg-red-300;
+}
+
+.table-warning {
+    @apply table border-warning;
+}
+
+.table-warning td, .table-warning th {
+    @apply border border-solid border-warning;
+}
+
+.table-warning.table-hover tr:hover {
+    @apply bg-yellow-300;
+}
+
+.table-info {
+    @apply table border-info;
+}
+
+.table-info td, .table-info th {
+    @apply border border-solid border-info;
+}
+
+.table-info.table-hover tr:hover {
+    @apply bg-blue-300;
+}
+
+.table-light {
+    @apply table border-light;
+}
+
+.table-light td, .table-light th {
+    @apply border border-solid border-light;
+}
+
+.table-light.table-hover tr:hover {
+    @apply bg-gray-300;
+}
+
+.table-dark {
+    @apply table border-dark;
+}
+
+.table-dark td, .table-dark th {
+    @apply border border-solid border-dark;
+}
+
+.table-dark.table-hover tr:hover {
+    @apply bg-gray-700 text-white;
+}
+
+.table-strip-main tr:nth-child(even) {
+    @apply bg-main;
+}
+
+.table-strip-success tr:nth-child(even) {
+    @apply bg-green-200;
+}
+
+.table-strip-danger tr:nth-child(even) {
+    @apply bg-red-200;
+}
+
+.table-strip-warning tr:nth-child(even) {
+    @apply bg-yellow-200;
+}
+
+.table-strip-info tr:nth-child(even) {
+    @apply bg-blue-200;
+}
+
+.table-strip-light tr:nth-child(even) {
+    @apply bg-gray-200;
+}
+
+.table-strip-dark tr:nth-child(even) {
+    @apply bg-gray-600 color-white;
+}

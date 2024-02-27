@@ -1,0 +1,53 @@
+/*
+- [ ]  **Alerts:**
+    - Success alert
+    - Info alert
+    - Warning alert
+    - Danger alert
+    - Dismissible alerts
+*/
+
+.alert {
+    max-width: 600px;
+    @apply border border-solid __var_main_background p-6 rounded-2xl shadow-xl;
+}
+
+.alert-header {
+    @apply w-full border-b border-solid border-inherit;
+}
+
+.alert-body {
+    @apply w-full mt-5;
+}
+
+.alert-footer {
+    @apply w-full mt-5;
+}
+
+.alert-main {
+    @apply alert border-main color-main;
+}
+
+.alert-success {
+    @apply alert border-success color-success;
+}
+
+.alert-danger {
+    @apply alert border-danger color-danger;
+}
+
+.alert-warning {
+    @apply alert border-warning color-warning;
+}
+
+.alert-info {
+    @apply alert border-info color-info;
+}
+
+.alert-light {
+    @apply alert border-light color-light;
+}
+
+.alert-dark {
+    @apply alert border-dark color-dark;
+}

@@ -1,7 +1,7 @@
 @extends('layouts.guest')
 @section('content')
 
-    <div>
+    <div class="_container">
         <h2>Welcome to A must, simplistic, powerful, one and only</h2>
         <h1>{{ config('app.name') }}</h1>
 

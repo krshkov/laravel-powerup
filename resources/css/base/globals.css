@@ -1,0 +1,13 @@
+/*
+- [🌐]  **Globals:**
+    - Primary color
+    - Secondary colors
+    - Heading font
+    - Base font
+*/
+body {
+    scroll-behavior: smooth;
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+}

@@ -1,7 +1,7 @@
 @extends('layouts.guest')
 @section('content')
-    <div>
-        <div>
+    <div class="_container flex justify-center items-center mt-12 color-main">
+        <div class="max-w-form w-full">
             <h3>Password Reset</h3>
             @if($errors->any())
                 {{ dump($errors) }}
@@ -10,7 +10,7 @@
                 @method('POST')
                 @csrf
 
-                <div>
+                <div class="input-group">
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" required>
                     @error('password')
@@ -18,7 +18,7 @@
                     @enderror
                 </div>
 
-                <div>
+                <div class="input-group">
                     <label for="password_confirmation">Confirm Password</label>
                     <input type="password" name="password_confirmation" id="password_confirmation" required>
                     @error('password_confirmation')
@@ -29,7 +29,7 @@
                 <input type="hidden" name="email" value="{{ $request->email }}">
                 <input type="hidden" name="token" value="{{ request()->route('token') }}">
 
-                <button type="submit">Continue</button>
+                <button class="btn-main hoverable mt-8" type="submit">Continue</button>
             </form>
         </div>
     </div>

@@ -1,0 +1,367 @@
+/*
+- [🤓]  **Animations:**
+    - .anim_fadeIn -> Fade In (slow, fast)
+    - .anim_fadeOut -> Fade Out (slow, fast)
+    - .anim_fadeInOut -> Fade In and Out (slow, fast)
+    - .anim_scaleUp -> Scale Up
+    - .anim_scaleDown -> Scale Down
+    - .anim_wingLeft -> Wing Left
+    - .anim_wingRight -> Wing Right
+    - .anim_flowerRotor -> Flower Rotor (slow, fast)
+    - .anim_moveUp -> Move Up (slow, fast)
+    - .anim_moveDown -> Move Down (slow, fast)
+    - .anim_moveLeft -> Move Left (slow, fast)
+    - .anim_moveRight -> Move Right (slow, fast)
+    - .anim_powerUp -> Power Up (slow, fast) [special]
+
+    - [ ]  **Tailwind Animations:**
+    - .animate-none -> Clear Animation
+    - .animate-bounce -> Bounce {endless jumping}
+    - .animate-spin -> Spin {slow endless rotation}
+    - .animate-pulse -> Pulse {endless fade in and out}
+    - .animate-ping -> Ping {endless blinking}
+*/
+@layer utilities {
+
+    .anim_fadeIn {
+        animation: fadeIn 2s linear 1 forwards;
+    }
+
+    .anim_fadeInSlow {
+        animation: fadeIn 4s linear 1 forwards;
+    }
+
+    .anim_fadeInFast {
+        animation: fadeIn .5s linear 1 forwards;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: .5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .anim_fadeOut {
+        animation: fadeOut 2s linear 1 forwards;
+    }
+
+    .anim_fadeOutSlow {
+        animation: fadeOut 4s linear 1 forwards;
+    }
+
+    .anim_fadeOutFast {
+        animation: fadeOut .5s linear 1 forwards;
+    }
+
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: .5;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .anim_fadeInOut {
+        animation: fadeInOut 8s linear 1 forwards;
+    }
+
+    .anim_fadeInOutSlow {
+        animation: fadeInOut 14s linear 1 forwards;
+    }
+
+    .anim_fadeInOutFast {
+        animation: fadeInOut 4s linear 1 forwards;
+    }
+
+    @keyframes fadeInOut {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .anim_scaleUp {
+        animation: scaleUp .5s linear 1 forwards;
+    }
+
+    @keyframes scaleUp {
+        0% {
+            scale: 1;
+        }
+        50% {
+            scale: 1.05;
+        }
+        100% {
+            scale: 1;
+        }
+    }
+
+    .anim_scaleDown {
+        animation: scaleDown .5s linear 1 forwards;
+    }
+
+    @keyframes scaleDown {
+        0% {
+            scale: 1;
+        }
+        50% {
+            scale: .95;
+        }
+        100% {
+            scale: 1;
+        }
+    }
+
+    .anim_wingLeft {
+        animation: wingLeft .5s linear 1 forwards;
+    }
+
+    @keyframes wingLeft {
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(-0.05turn);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    .anim_wingRight {
+        animation: wingRight .5s linear 1 forwards;
+    }
+
+    @keyframes wingRight {
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(0.05turn);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    .anim_flowerRotor {
+        animation: flowerRotor 2s linear 1 forwards;
+    }
+
+    .anim_flowerRotorSlow {
+        animation: flowerRotor 4s linear 1 forwards;
+    }
+
+    .anim_flowerRotorFast {
+        animation: flowerRotor 1s linear 1 forwards;
+    }
+
+    @keyframes flowerRotor {
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(10turn);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    .anim_streetRotor {
+        animation: streetRotor 2s linear 1 forwards;
+    }
+
+    .anim_streetRotorSlow {
+        animation: streetRotor 4s linear 1 forwards;
+    }
+
+    .anim_streetRotorFast {
+        animation: streetRotor 1s linear 1 forwards;
+    }
+
+    @keyframes streetRotor {
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(1turn);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    .anim_moveUp {
+        animation: moveUp 1s linear 1 forwards;
+    }
+
+    .anim_moveUpSlow {
+        animation: moveUp 2s linear 1 forwards;
+    }
+
+    .anim_moveUpFast {
+        animation: moveUp .5s linear 1 forwards;
+    }
+
+    @keyframes moveUp {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .anim_moveDown {
+        animation: moveDown 1s linear 1 forwards;
+    }
+
+    .anim_moveDownSlow {
+        animation: moveDown 2s linear 1 forwards;
+    }
+
+    .anim_moveDownFast {
+        animation: moveDown .5s linear 1 forwards;
+    }
+
+    @keyframes moveDown {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(10px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .anim_moveLeft {
+        animation: moveLeft 1s linear 1 forwards;
+    }
+
+    .anim_moveLeftSlow {
+        animation: moveLeft 2s linear 1 forwards;
+    }
+
+    .anim_moveLeftFast {
+        animation: moveLeft .5s linear 1 forwards;
+    }
+
+    @keyframes moveLeft {
+        0% {
+            transform: translateX(0px);
+        }
+        50% {
+            transform: translateX(-10px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    .anim_moveRight {
+        animation: moveRight 1s linear 1 forwards;
+    }
+
+    .anim_moveRightSlow {
+        animation: moveRight 2s linear 1 forwards;
+    }
+
+    .anim_moveRightFast {
+        animation: moveRight .5s linear 1 forwards;
+    }
+
+    @keyframes moveRight {
+        0% {
+            transform: translateX(0px);
+        }
+        50% {
+            transform: translateX(10px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    .anim_powerUp {
+        animation: powerUp 2s linear 1 forwards;
+    }
+
+    .anim_powerUpSlow {
+        animation: powerUp 4s linear 1 forwards;
+    }
+
+    .anim_powerUpFast {
+        animation: powerUp 1s linear 1 forwards;
+    }
+
+    @keyframes powerUp {
+        0% {
+            transform: scale(1) rotate(0turn) translateX(0px) translateY(0px) rotateZ(0deg);
+        }
+        25% {
+            transform: scale(6) rotate(-15turn) translateX(-30px) translateY(-44px) rotateZ(30deg);
+        }
+        50% {
+            transform: scale(10) rotate(-30turn) translateX(-30px) translateY(-44px) rotateZ(30deg);
+        }
+        75% {
+            transform: scale(6) rotate(-15turn) translateX(-30px) translateY(-44px) rotateZ(30deg);
+        }
+        100% {
+            transform: scale(1) rotate(0turn) translateX(0px) translateY(0px) rotateZ(0deg);
+        }
+    }
+
+    .anim_scaleFull {
+        animation: scaleFull 1s linear 1 forwards;
+    }
+
+    @keyframes scaleFull {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(10);
+        }
+        100% {
+            transform: scale(20);
+        }
+    }
+
+    .anim_scaleDownFull {
+        animation: scaleDownFull .5s linear 1 forwards;
+    }
+
+    @keyframes scaleDownFull {
+        0% {
+            transform: scale(20);
+        }
+        50% {
+            transform: scale(10);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+}

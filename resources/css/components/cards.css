@@ -1,0 +1,100 @@
+/*
+- [ ]  **Cards:**
+    - Basic card
+    - Card with image
+    - Card with header
+    - Card with footer
+    - Card with actions
+*/
+.card {
+    max-width: 600px;
+    max-height: 800px;
+    background: var(--mainbg);
+    @apply overflow-hidden relative rounded-2xl border-2 border-solid flex flex-col justify-between my-2 shadow;
+}
+
+.card-greeter {
+    @apply absolute rounded-full;
+    width: 200px;
+    height: 200px;
+    top: -100px;
+    right: -100px;
+    z-index: 1;
+}
+
+.card-header {
+    @apply border-b-2 border-solid border-inherit;
+}
+
+.card-header *, .card-body *, .card-footer * {
+    position: relative;
+    z-index: 10;
+}
+
+.card-header > h2 {
+    @apply m-6;
+}
+
+.card-body {
+    @apply mt-5 p-5;
+}
+
+.card-footer {
+    @apply p-5;
+}
+
+.card-main {
+    @apply card border-main;
+}
+
+.card-main .card-greeter {
+    @apply bg-main;
+}
+
+.card-success {
+    @apply card border-success;
+}
+
+.card-success .card-greeter {
+    @apply bg-success;
+}
+
+.card-danger {
+    @apply card border-danger;
+}
+
+.card-danger .card-greeter {
+    @apply bg-danger;
+}
+
+.card-warning {
+    @apply card border-warning;
+}
+
+.card-warning .card-greeter {
+    @apply bg-warning;
+}
+
+.card-info {
+    @apply card border-info;
+}
+
+.card-info .card-greeter {
+    @apply bg-info;
+}
+
+.card-light {
+    @apply card border-light;
+}
+
+.card-light .card-greeter {
+    @apply bg-light;
+}
+
+.card-dark {
+    @apply card border-dark;
+}
+
+.card-dark .card-greeter {
+    @apply bg-dark;
+}

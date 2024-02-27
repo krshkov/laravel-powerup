@@ -1,14 +1,14 @@
 @extends('layouts.guest')
 @section('content')
-    <div>
-        <div>
-            <h3>Sign In</h3>
+    <div class="_container flex justify-center items-center mt-12 color-main">
+        <div class="max-w-form w-full">
+            <h3 class="text-center">Sign In</h3>
 
             <form action="{{ route('login') }}" method="POST">
                 @method('POST')
                 @csrf
 
-                <div>
+                <div class="input-group">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" required>
                     @error('email')
@@ -16,7 +16,7 @@
                     @enderror
                 </div>
 
-                <div>
+                <div class="input-group">
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" required>
                     @error('password')
@@ -24,7 +24,7 @@
                     @enderror
                 </div>
 
-                <div>
+                <div class="input-inline-group">
                     <input type="checkbox" name="remember" id="remember" checked>
                     <label for="remember">Remember me</label>
                     @error('remember')
@@ -32,21 +32,21 @@
                     @enderror
                 </div>
 
-                <div>
-                    <button type="submit">Sign in</button>
+                <div class="flex items-center gap-12 pt-4 justify-between">
+                    <button class="btn-main hoverable" type="submit">Sign in</button>
                     <a href="{{ route('password.request') }}"><h6>Forgot Password?</h6></a>
                 </div>
             </form>
 
-            <p>------------------- OR -------------------</p>
+            <p class="mt-4 text-center">------------------- OR -------------------</p>
 
-            <div>
-                <a href="#">Google</a>
+            <div class="mt-4 flex items-center justify-center gap-8">
+                <a href="#"><x-akar-google-fill width="24px"/></a>
                 <span>|</span>
-                <a href="#">Facebook</a>
+                <a href="#"><x-vaadin-facebook width="24px"/></a>
             </div>
 
-            <p>Don't have an account? <a href="{{ route('register') }}">Sign Up</a> -></p>
+            <p class="text-center mt-4">Don't have an account? <a href="{{ route('register') }}" class="font-bold">Sign Up</a> <x-akar-arrow-right-thick class="inline" width="20px"/></p>
         </div>
     </div>
 @endsection

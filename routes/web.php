@@ -20,7 +20,12 @@ Route::get('/', function () {
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/home', function () {
         return view('home');
-    });
+    })->name('home');
+
+    Route::get('/components', function () {
+        //return redirect(route('home'))->with('light', 'Project Updated!');
+        return view('components');
+    })->name("components");
 
     Route::middleware(['password.confirm'])->group(function () {
         // High value actions

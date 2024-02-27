@@ -1,0 +1,102 @@
+/*
+- [🀄]  **Typography:**
+    - Fonts
+    - Heading styles (h1 to h6)
+    - Paragraph styles
+    - Anchor. Link. styles
+*/
+
+@layer utilities {
+    :root {
+        --basefont: "Nunito", sans-serif;
+        --secondfont: "Playfair Display", serif;
+        --headingfont: var(--basefont);
+    }
+
+    .font-heading {
+        font-family: var(--headingfont);
+        font-optical-sizing: auto;
+        /* font-weight: < weight >; Use a value from 400 to 900 */
+        font-style: normal;
+    }
+
+    .font-base {
+        font-family: var(--basefont);
+        font-optical-sizing: auto;
+        /* font-weight: <weight>; Use a value from 200 to 1000 */
+        font-style: normal;
+    }
+
+    .font-second {
+        font-family: var(--secondfont);
+        font-optical-sizing: auto;
+        /* font-weight: <weight>; Use a value from 200 to 1000 */
+        font-style: normal;
+    }
+}
+
+h1 {
+    /*font-family: var(--headingfont);*/
+    font-family: var(--basefont);
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+h2 {
+    /*font-family: var(--headingfont);*/
+    font-family: var(--basefont);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+h3 {
+    /*font-family: var(--headingfont);*/
+    font-family: var(--basefont);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+h4 {
+    /*font-family: var(--headingfont);*/
+    font-family: var(--basefont);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+h5 {
+    /*font-family: var(--headingfont);*/
+    font-family: var(--basefont);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h6 {
+    /*font-family: var(--headingfont);*/
+    font-family: var(--basefont);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+p {
+    font-family: Nunito, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a {
+    @apply hover:text-red-600;
+}

@@ -1,0 +1,60 @@
+/*
+- [ ]  **Tooltips:**
+    - Basic tooltip
+*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black; !* If you want dots under the hoverable text *!*/
+}
+
+/* Tooltip text */
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background: var(--maincolor);
+    color: #ffffff;
+    text-align: center;
+    padding: 18px;
+    border-radius: 6px;
+    z-index: 1000;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    right: -140px;
+    top: 0;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    /*z-index: 63516854;*/
+    @apply anim_fadeInFast;
+}
+
+.tooltip .tooltip-text.main {
+    @apply bg-main;
+}
+
+.tooltip .tooltip-text.success {
+    @apply bg-success;
+}
+
+.tooltip .tooltip-text.danger {
+    @apply bg-danger;
+}
+
+.tooltip .tooltip-text.warning {
+    @apply bg-warning;
+}
+
+.tooltip .tooltip-text.info {
+    @apply bg-info;
+}
+
+.tooltip .tooltip-text.light {
+    @apply bg-light;
+}
+
+.tooltip .tooltip-text.dark {
+    @apply bg-dark;
+}

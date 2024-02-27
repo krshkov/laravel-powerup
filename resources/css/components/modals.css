@@ -1,0 +1,89 @@
+/*
+- [ ]  **Modals:**
+    - Basic modal
+    - Modal with header
+    - Modal with footer
+    - Modal with actions
+*/
+.modal-component-example {
+    @apply my-4 border-2 border-solid rounded-2xl max-w-half shadow-xl;
+    background: var(--mainbg);
+    position: initial !important;
+}
+
+.modal {
+    @apply my-4 mx-auto border-2 border-solid rounded-2xl max-w-half fixed shadow-xl;
+    background: var(--mainbg);
+    left: 0;
+    right: 0;
+    top: 50px;
+    z-index: 1000;
+}
+
+.modal.hidden, .modal-component-example {
+    z-index: 1 !important;
+}
+
+.modal .modal-header {
+    @apply border-b-2 border-solid border-inherit rounded-t-2xl px-6 py-3;
+}
+
+.modal .modal-body {
+    @apply mt-4 px-12 py-2 pb-6;
+}
+
+.modal-main {
+    @apply modal border-main color-main;
+}
+
+.modal-main .modal-header {
+    @apply bg-main color-white;
+}
+
+.modal-success {
+    @apply modal border-success color-success;
+}
+
+.modal-success .modal-header {
+    @apply bg-success color-white;
+}
+
+.modal-danger {
+    @apply modal border-danger color-danger;
+}
+
+.modal-danger .modal-header {
+    @apply bg-danger color-white;
+}
+
+.modal-warning {
+    @apply modal border-warning color-warning;
+}
+
+.modal-warning .modal-header {
+    @apply bg-warning color-white;
+}
+
+.modal-info {
+    @apply modal border-info color-info;
+}
+
+.modal-info .modal-header {
+    @apply bg-info color-white;
+}
+
+.modal-light {
+    @apply modal border-light color-light;
+}
+
+.modal-light .modal-header {
+    @apply bg-light color-white;
+}
+
+.modal-dark {
+    @apply modal border-dark;
+}
+
+.modal-dark .modal-header {
+    @apply bg-dark color-white;
+}

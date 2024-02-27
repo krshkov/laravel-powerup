@@ -1,0 +1,165 @@
+/*
+- [🥶]  **Colors:**
+    - Vars
+    - Main Color
+    - Text colors
+    - Background colors
+    - Border colors
+    - Shadow colors
+
+
+    - main -> --maincolor: #C93030
+    - [⬇]  **Used Tailwind Colors:**
+    - success -> *-green-400 #4ade80
+    - danger -> *-red-400 #f87171
+    - warning -> *-warning-400 #facc15
+    - info -> *-blue-400 #60a5fa
+    - light -> *-gray-400 #9ca3af
+    - dark -> *-gray-950 #030712
+*/
+@layer utilities {
+    :root {
+        --mainbg: #FFFFFF;
+        --maincolor: #C93030;
+    }
+
+    .__var_main_background {
+        background: var(--mainbg);
+    }
+
+    .color-main {
+        color: var(--maincolor);
+    }
+
+    .color-white {
+        color: #FFFFFF;
+    }
+
+    .color-black {
+        color: #000000;
+    }
+
+    .color-success {
+        @apply text-green-400;
+    }
+
+    .color-danger {
+        @apply text-red-400;
+    }
+
+    .color-warning {
+        @apply text-yellow-400;
+    }
+
+    .color-info {
+        @apply text-blue-400;
+    }
+
+    .color-light {
+        @apply text-gray-400;
+    }
+
+    .color-dark {
+        @apply text-gray-950;
+    }
+
+    .bg-main {
+        background: var(--maincolor);
+    }
+
+    .bg-white {
+        background: #FFFFFF;
+    }
+
+    .bg-black {
+        background: #000000;
+    }
+
+    .bg-success {
+        @apply bg-green-400;
+    }
+
+    .bg-danger {
+        @apply bg-red-400;
+    }
+
+    .bg-warning {
+        @apply bg-yellow-400;
+    }
+
+    .bg-info {
+        @apply bg-blue-400;
+    }
+
+    .bg-light {
+        @apply bg-gray-400;
+    }
+
+    .bg-dark {
+        @apply bg-gray-950;
+    }
+
+    .border-main {
+        border-color: var(--maincolor);
+    }
+
+    .border-white {
+        border-color: #FFFFFF;
+    }
+
+    .border-black {
+        border-color: #000000;
+    }
+
+    .border-success {
+        @apply border-green-400;
+    }
+
+    .border-danger {
+        @apply border-red-400;
+    }
+
+    .border-warning {
+        @apply border-yellow-400;
+    }
+
+    .border-info {
+        @apply border-blue-400;
+    }
+
+    .border-light {
+        @apply border-gray-400;
+    }
+
+    .border-dark {
+        @apply border-gray-950;
+    }
+
+    .shadow-main {
+        @apply shadow-[#C93030];
+    }
+
+    .shadow-success {
+        @apply shadow-green-400;
+    }
+
+    .shadow-danger {
+        @apply shadow-red-400;
+    }
+
+    .shadow-warning {
+        @apply shadow-yellow-400;
+    }
+
+    .shadow-info {
+        @apply shadow-blue-400;
+    }
+
+    .shadow-light {
+        @apply shadow-gray-400;
+    }
+
+    .shadow-dark {
+        @apply shadow-gray-400;
+    }
+}

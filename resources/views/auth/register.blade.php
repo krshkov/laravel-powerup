@@ -1,24 +1,23 @@
 @extends('layouts.guest')
 @section('content')
-    <div>
-        <div>
-            <div>
+    <div class="_container flex justify-center items-center mt-12 color-main">
+        <div class="max-w-form w-full">
+            <div class="flex justify-between items-center">
                 <h3>Sign Up</h3>
                 <a href="{{ route('login') }}"><p>Sign In</p></a> {{-- p-lg [18px] --}}
             </div>
             <form action="{{ route('register') }}" method="POST">
                 @method('POST')
                 @csrf
-
-                <div>
-                    <div>
+                <div class="flex justify-between">
+                    <div class="input-group">
                         <label for="firstName">First Name</label>
                         <input type="text" name="firstName" id="firstName" required>
                         @error('firstName')
                         <small>{{ $errors->first('firstName') }}</small>
                         @enderror
                     </div>
-                    <div>
+                    <div class="input-group">
                         <label for="lastName">Last Name</label>
                         <input type="text" name="lastName" id="lastName" required>
                         @error('lastName')
@@ -27,7 +26,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="input-group">
                     <label for="phone">Phone Number</label>
                     <input type="tel" name="phone" id="phone" required>
                     @error('phone')
@@ -35,7 +34,7 @@
                     @enderror
                 </div>
 
-                <div>
+                <div class="input-group">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" required>
                     @error('email')
@@ -43,7 +42,7 @@
                     @enderror
                 </div>
 
-                <div>
+                <div class="input-group">
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" required>
                     @error('password')
@@ -51,7 +50,7 @@
                     @enderror
                 </div>
 
-                <div>
+                <div class="input-group">
                     <label for="password_confirmation">Confirm Password</label>
                     <input type="password" name="password_confirmation" id="password_confirmation" required>
                     @error('password_confirmation')
@@ -59,7 +58,7 @@
                     @enderror
                 </div>
 
-                <div>
+                <div class="mt-4">
                     <input type="checkbox" name="termsAccepted" id="termsAccepted" value=1 required>
                     <label for="termsAccepted">I have accepted the <a href="#">terms and conditions</a></label>
                     @error('termsAccepted')
@@ -67,7 +66,7 @@
                     @enderror
                 </div>
 
-                <div>
+                <div class="mt-2">
                     <input type="checkbox" name="subscribe" id="subscribe" value=1 checked>
                     <label for="subscribe">I want to subscribe to the newsletter</label>
                     @error('subscribe')
@@ -75,22 +74,22 @@
                     @enderror
                 </div>
 
-                <div>
-                    <button type="submit">Sign up</button>
+                <div class="flex items-center justify-between mt-4">
+                    <button class="btn-main hoverable" type="submit">Sign up</button>
                     <a href="{{ route('password.request') }}"><h6>Forgot Password?</h6></a>
                 </div>
 
             </form>
 
-            <p>------------------- OR -------------------</p>
+            <p class="mt-4 text-center">------------------- OR -------------------</p>
 
-            <div>
-                <a href="#">Google</a>
+            <div class="mt-4 flex items-center justify-center gap-8">
+                <a href="#"><x-akar-google-fill width="24px"/></a>
                 <span>|</span>
-                <a href="#">Facebook</a>
+                <a href="#"><x-vaadin-facebook width="24px"/></a>
             </div>
 
-            <p>Already have an account? <a href="{{ route('login') }}">Sign In</a> -></p>
+            <p class="mt-4 text-center">Already have an account? <a class="font-bold" href="{{ route('login') }}">Sign In</a> <x-akar-arrow-right-thick class="inline" width="20px"/></p>
         </div>
     </div>
 @endsection

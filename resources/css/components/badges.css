@@ -1,0 +1,132 @@
+/*
+- [ ]  **Badges:**
+    - Badges
+    - Pills
+    - Dots
+*/
+
+.badge-group {
+    @apply relative m-3;
+}
+
+.badge-group > .body > p, .badge-group > .body > a {
+    @apply p-4;
+}
+
+.badge {
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    top: -10px;
+    z-index: 10;
+    @apply p-3 rounded-3xl text-center flex items-center justify-center absolute;
+}
+
+.badge-main {
+    @apply badge bg-main;
+}
+
+.badge-success {
+    @apply badge bg-success;
+}
+
+.badge-danger {
+    @apply badge bg-danger;
+}
+
+.badge-warning {
+    @apply badge bg-warning;
+}
+
+.badge-info {
+    @apply badge bg-info;
+}
+
+.badge-light {
+    @apply badge bg-light;
+}
+
+.badge-dark {
+    @apply badge bg-dark text-white;
+}
+
+.pill {
+    @apply rounded-2xl py-1 px-3 font-bold;
+}
+
+.pill-main {
+    @apply pill bg-main color-white;
+}
+
+.pill-success {
+    @apply pill bg-success color-white;
+}
+
+.pill-danger {
+    @apply pill bg-danger color-white;
+}
+
+.pill-warning {
+    @apply pill bg-warning color-white;
+}
+
+.pill-info {
+    @apply pill bg-info color-white;
+}
+
+.pill-light {
+    @apply pill bg-light color-white;
+}
+
+.pill-dark {
+    @apply pill bg-dark color-white;
+}
+
+.dot-group {
+    @apply relative m-3;
+}
+
+.dot-group > .body > p {
+    @apply p-5;
+}
+
+.dot-group > .body > button {
+    @apply pl-6;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    left: 10px;
+    top: 10px;
+    z-index: 10;
+    @apply rounded-3xl absolute;
+}
+
+.dot-main {
+    @apply dot bg-main;
+}
+
+.dot-success {
+    @apply dot bg-success;
+}
+
+.dot-danger {
+    @apply dot bg-danger;
+}
+
+.dot-warning {
+    @apply dot bg-warning;
+}
+
+.dot-info {
+    @apply dot bg-info;
+}
+
+.dot-light {
+    @apply dot bg-light;
+}
+
+.dot-dark {
+    @apply dot bg-dark;
+}

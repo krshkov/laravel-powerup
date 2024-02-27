@@ -1,0 +1,19 @@
+/*
+- [ ]  **Progress Bars:**
+    - Linear progress bar
+*/
+progress[value]::-webkit-progress-value {
+    @apply rounded-2xl bg-main animate-pulse;
+}
+
+progress[value]::-moz-progress-bar {
+    @apply rounded-2xl bg-main animate-pulse;
+}
+
+progress[value] {
+    @apply rounded-2xl bg-main animate-pulse;
+}
+
+progress[value]::-webkit-progress-bar {
+    @apply rounded-2xl bg-gray-200;
+}

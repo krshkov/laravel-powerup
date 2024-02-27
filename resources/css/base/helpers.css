@@ -1,0 +1,18 @@
+@layer utilities {
+    .max-w-half {
+        width: 50%;
+    }
+
+    .hard-hidden {
+        display: none !important;
+    }
+
+    ._container {
+        max-width: 1920px;
+        padding: 0 16px;
+    }
+
+    .max-w-form {
+        max-width: var(--max-w-form);
+    }
+}
