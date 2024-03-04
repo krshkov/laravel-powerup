@@ -7,13 +7,13 @@
 */
 .modal-component-example {
     @apply my-4 border-2 border-solid rounded-2xl max-w-half shadow-xl;
-    background: var(--mainbg);
+    /*background: var(--mainbg);*/
     position: initial !important;
 }
 
 .modal {
-    @apply my-4 mx-auto border-2 border-solid rounded-2xl max-w-half fixed shadow-xl;
-    background: var(--mainbg);
+    @apply my-4 mx-auto border-2 border-solid rounded-2xl max-w-half fixed shadow-xl __var_main_background_light dark:__var_main_background_dark;
+    /*background: var(--mainbg);*/
     left: 0;
     right: 0;
     top: 50px;
@@ -80,10 +80,10 @@
     @apply bg-light color-white;
 }
 
-.modal-dark {
-    @apply modal border-dark;
+.modal-opposite {
+    @apply modal border-opposite;
 }
 
-.modal-dark .modal-header {
-    @apply bg-dark color-white;
+.modal-opposite .modal-header {
+    @apply bg-opposite color-white dark:text-black;
 }

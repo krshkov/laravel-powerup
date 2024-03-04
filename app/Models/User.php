@@ -29,6 +29,7 @@ class User extends Authenticatable implements MustVerifyEmail
         'password',
         'subscriber',
         'accepted_terms_and_conditions',
+        'dark_mode',
     ];
 
     /**

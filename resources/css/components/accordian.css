@@ -71,10 +71,10 @@
     @apply bg-light;
 }
 
-.accordion-group-dark {
-    @apply accordion-group border-x-2 border-solid border-dark shadow-dark shadow-2xl;
+.accordion-group-opposite {
+    @apply accordion-group border-x-2 border-solid border-opposite shadow-opposite shadow-2xl;
 }
 
-.accordion-group-dark > .accordion-on {
-    @apply bg-gray-900;
+.accordion-group-opposite > .accordion-on {
+    @apply bg-opposite dark:text-black;
 }

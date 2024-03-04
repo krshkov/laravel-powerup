@@ -11,11 +11,11 @@
     - Outline buttons
 */
 .btn {
-    @apply px-3 py-1.5 rounded-xl border border-transparent font-semibold shadow;
+    @apply px-3 py-1.5 rounded-xl border font-semibold shadow;
 }
 
 .btn-main {
-    @apply btn color-white bg-main;
+    @apply btn color-white dark:color-black bg-main border-main;
 }
 
 .btn-main.hoverable:hover {
@@ -24,7 +24,7 @@
 }
 
 .btn-success {
-    @apply btn color-white bg-success;
+    @apply btn color-white dark:color-black bg-success border-success;
 }
 
 .btn-success.hoverable:hover {
@@ -33,7 +33,7 @@
 }
 
 .btn-danger {
-    @apply btn color-white bg-danger;
+    @apply btn color-white dark:color-black bg-danger border-danger;
 }
 
 .btn-danger.hoverable:hover {
@@ -42,7 +42,7 @@
 }
 
 .btn-warning {
-    @apply btn color-white bg-warning;
+    @apply btn color-white dark:color-black bg-warning border-warning;
 }
 
 .btn-warning.hoverable:hover {
@@ -51,7 +51,7 @@
 }
 
 .btn-info {
-    @apply btn color-white bg-info;
+    @apply btn color-white dark:color-black bg-info border-info;
 }
 
 .btn-info.hoverable:hover {
@@ -60,7 +60,7 @@
 }
 
 .btn-light {
-    @apply btn color-white bg-light;
+    @apply btn color-white dark:color-black bg-light border-light;
 }
 
 .btn-light.hoverable:hover {
@@ -68,13 +68,13 @@
     @apply color-light bg-transparent border-solid border-light anim_scaleDown;
 }
 
-.btn-dark {
-    @apply btn color-white bg-dark;
+.btn-opposite {
+    @apply btn color-white dark:color-black bg-opposite border-opposite;
 }
 
-.btn-dark.hoverable:hover {
+.btn-opposite.hoverable:hover {
     z-index: 2;
-    @apply color-dark bg-transparent border-solid border-dark anim_scaleDown;
+    @apply color-opposite bg-transparent border-solid border-opposite anim_scaleDown;
 }
 
 .btn-outline-main {
@@ -83,7 +83,7 @@
 
 .btn-outline-main.hoverable:hover {
     z-index: 2;
-    @apply bg-main color-white anim_scaleDown;
+    @apply bg-main color-white dark:color-black anim_scaleDown;
 }
 
 .btn-outline-success {
@@ -92,7 +92,7 @@
 
 .btn-outline-success.hoverable:hover {
     z-index: 2;
-    @apply bg-success color-white anim_scaleDown;
+    @apply bg-success color-white dark:color-black anim_scaleDown;
 }
 
 .btn-outline-danger {
@@ -101,7 +101,7 @@
 
 .btn-outline-danger.hoverable:hover {
     z-index: 2;
-    @apply bg-danger color-white anim_scaleDown;
+    @apply bg-danger color-white dark:color-black anim_scaleDown;
 }
 
 .btn-outline-warning {
@@ -110,7 +110,7 @@
 
 .btn-outline-warning.hoverable:hover {
     z-index: 2;
-    @apply bg-warning color-white anim_scaleDown;
+    @apply bg-warning color-white dark:color-black anim_scaleDown;
 }
 
 .btn-outline-info {
@@ -119,7 +119,7 @@
 
 .btn-outline-info.hoverable:hover {
     z-index: 2;
-    @apply bg-info color-white anim_scaleDown;
+    @apply bg-info color-white dark:color-black anim_scaleDown;
 }
 
 .btn-outline-light {
@@ -128,14 +128,14 @@
 
 .btn-outline-light.hoverable:hover {
     z-index: 2;
-    @apply bg-light color-white anim_scaleDown;
+    @apply bg-light color-white dark:color-black anim_scaleDown;
 }
 
-.btn-outline-dark {
-    @apply btn color-dark border-solid border-dark;
+.btn-outline-opposite {
+    @apply btn color-opposite border-solid border-opposite;
 }
 
-.btn-outline-dark.hoverable:hover {
+.btn-outline-opposite.hoverable:hover {
     z-index: 2;
-    @apply bg-dark color-white anim_scaleDown;
+    @apply bg-opposite color-white dark:color-black anim_scaleDown;
 }

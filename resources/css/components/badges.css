@@ -46,8 +46,8 @@
     @apply badge bg-light;
 }
 
-.badge-dark {
-    @apply badge bg-dark text-white;
+.badge-opposite {
+    @apply badge bg-opposite text-white dark:color-black;
 }
 
 .pill {
@@ -78,8 +78,8 @@
     @apply pill bg-light color-white;
 }
 
-.pill-dark {
-    @apply pill bg-dark color-white;
+.pill-opposite {
+    @apply pill bg-opposite color-white dark:color-black;
 }
 
 .dot-group {
@@ -127,6 +127,6 @@
     @apply dot bg-light;
 }
 
-.dot-dark {
-    @apply dot bg-dark;
+.dot-opposite {
+    @apply dot bg-opposite;
 }

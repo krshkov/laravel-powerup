@@ -28,7 +28,7 @@
 }
 
 .tab-group-main {
-    @apply tab-group border-main color-main;
+    @apply tab-group border-main;
 }
 
 .tab-group-main .tab-header {
@@ -44,7 +44,7 @@
 }
 
 .tab-group-success {
-    @apply tab-group border-success color-success;
+    @apply tab-group border-success;
 }
 
 .tab-group-success .tab-header {
@@ -60,7 +60,7 @@
 }
 
 .tab-group-danger {
-    @apply tab-group border-danger color-danger;
+    @apply tab-group border-danger;
 }
 
 .tab-group-danger .tab-header {
@@ -76,7 +76,7 @@
 }
 
 .tab-group-warning {
-    @apply tab-group border-warning color-warning;
+    @apply tab-group border-warning;
 }
 
 .tab-group-warning .tab-header {
@@ -92,7 +92,7 @@
 }
 
 .tab-group-info {
-    @apply tab-group border-info color-info;
+    @apply tab-group border-info;
 }
 
 .tab-group-info .tab-header {
@@ -108,7 +108,7 @@
 }
 
 .tab-group-light {
-    @apply tab-group border-light color-light;
+    @apply tab-group border-light;
 }
 
 .tab-group-light .tab-header {
@@ -123,18 +123,18 @@
     @apply bg-gray-600 anim_moveLeft;
 }
 
-.tab-group-dark {
-    @apply tab-group border-dark color-dark;
+.tab-group-opposite {
+    @apply tab-group border-opposite;
 }
 
-.tab-group-dark .tab-header {
-    @apply bg-dark text-white;
+.tab-group-opposite .tab-header {
+    @apply bg-opposite text-white dark:text-black;
 }
 
-.tab-group-dark .tab-header button:hover {
+.tab-group-opposite .tab-header button:hover {
     @apply bg-gray-600 text-white;
 }
 
-.tab-group-dark .tab-header button.tab-active {
+.tab-group-opposite .tab-header button.tab-active {
     @apply bg-gray-600 text-white anim_moveLeft;
 }

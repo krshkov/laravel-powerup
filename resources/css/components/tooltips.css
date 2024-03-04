@@ -55,6 +55,6 @@
     @apply bg-light;
 }
 
-.tooltip .tooltip-text.dark {
-    @apply bg-dark;
+.tooltip .tooltip-text.opposite {
+    @apply bg-opposite text-white dark:text-black;
 }

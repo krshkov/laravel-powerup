@@ -44,7 +44,7 @@ td, th {
 }
 
 .table-main.table-hover tr:hover {
-    @apply bg-danger;
+    @apply bg-danger dark:text-black;
 }
 
 .table-success {
@@ -56,7 +56,7 @@ td, th {
 }
 
 .table-success.table-hover tr:hover {
-    @apply bg-green-300;
+    @apply bg-green-300 dark:text-black;
 }
 
 .table-danger {
@@ -68,7 +68,7 @@ td, th {
 }
 
 .table-danger.table-hover tr:hover {
-    @apply bg-red-300;
+    @apply bg-red-300 dark:text-black;
 }
 
 .table-warning {
@@ -80,7 +80,7 @@ td, th {
 }
 
 .table-warning.table-hover tr:hover {
-    @apply bg-yellow-300;
+    @apply bg-yellow-300 dark:text-black;
 }
 
 .table-info {
@@ -92,7 +92,7 @@ td, th {
 }
 
 .table-info.table-hover tr:hover {
-    @apply bg-blue-300;
+    @apply bg-blue-300 dark:text-black;
 }
 
 .table-light {
@@ -104,45 +104,55 @@ td, th {
 }
 
 .table-light.table-hover tr:hover {
-    @apply bg-gray-300;
+    @apply bg-gray-300 dark:text-black;
 }
 
-.table-dark {
-    @apply table border-dark;
+.table-opposite {
+    @apply table border-opposite;
 }
 
-.table-dark td, .table-dark th {
-    @apply border border-solid border-dark;
+.table-opposite td, .table-opposite th {
+    @apply border border-solid border-opposite;
 }
 
-.table-dark.table-hover tr:hover {
-    @apply bg-gray-700 text-white;
+.table-opposite.table-hover tr:hover {
+    @apply bg-gray-800 text-white dark:bg-gray-200 dark:text-black;
 }
 
 .table-strip-main tr:nth-child(even) {
-    @apply bg-main;
+    @apply bg-main dark:color-black;
 }
 
 .table-strip-success tr:nth-child(even) {
-    @apply bg-green-200;
+    @apply bg-green-200 dark:color-black;
 }
 
 .table-strip-danger tr:nth-child(even) {
-    @apply bg-red-200;
+    @apply bg-red-200 dark:color-black;
 }
 
 .table-strip-warning tr:nth-child(even) {
-    @apply bg-yellow-200;
+    @apply bg-yellow-200 dark:color-black;
 }
 
 .table-strip-info tr:nth-child(even) {
-    @apply bg-blue-200;
+    @apply bg-blue-200 dark:color-black;
 }
 
 .table-strip-light tr:nth-child(even) {
-    @apply bg-gray-200;
+    @apply bg-gray-200 dark:color-black;
 }
 
-.table-strip-dark tr:nth-child(even) {
-    @apply bg-gray-600 color-white;
+.table-strip-opposite tr:nth-child(even) {
+    @apply bg-opposite color-white dark:color-black;
+}
+
+/* Get rid of header hover */
+.dark tbody tr:first-child:hover {
+    background: transparent !important;
+    color: #FFFFFF !important;
+}
+tbody tr:first-child:hover {
+    background: transparent !important;
+    color: #000000 !important;
 }

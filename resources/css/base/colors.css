@@ -19,12 +19,17 @@
 */
 @layer utilities {
     :root {
-        --mainbg: #FFFFFF;
+        --mainbgdark: #000000;
+        --mainbglight: #FFFFFF;
         --maincolor: #C93030;
     }
 
-    .__var_main_background {
-        background: var(--mainbg);
+    .__var_main_background_light {
+        background: var(--mainbglight);
+    }
+
+    .__var_main_background_dark {
+        background: var(--mainbgdark);
     }
 
     .color-main {
@@ -59,8 +64,8 @@
         @apply text-gray-400;
     }
 
-    .color-dark {
-        @apply text-gray-950;
+    .color-opposite {
+        @apply color-black dark:color-white;
     }
 
     .bg-main {
@@ -95,8 +100,8 @@
         @apply bg-gray-400;
     }
 
-    .bg-dark {
-        @apply bg-gray-950;
+    .bg-opposite {
+        @apply bg-black dark:bg-white;
     }
 
     .border-main {
@@ -131,8 +136,8 @@
         @apply border-gray-400;
     }
 
-    .border-dark {
-        @apply border-gray-950;
+    .border-opposite {
+        @apply border-black dark:border-white;
     }
 
     .shadow-main {
@@ -159,7 +164,7 @@
         @apply shadow-gray-400;
     }
 
-    .shadow-dark {
-        @apply shadow-gray-400;
+    .shadow-opposite {
+        @apply shadow-black dark:shadow-white;
     }
 }

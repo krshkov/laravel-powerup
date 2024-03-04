@@ -3,42 +3,45 @@
     - Minimalist loading spinner
 */
 .loader {
-    display: block;
+    width: 48px;
+    height: 48px;
+    /*border: 2px solid #FFF;*/
+    @apply border-2 border-solid border-opposite;
+    border-radius: 50%;
+    display: inline-block;
     position: relative;
-    width: 140px;
-    height: 140px;
-    background: var(--maincolor);
-    transform: rotateX(65deg) rotate(45deg);
-    /*remove bellows command for perspective change*/
-    /*transform: perspective(200px) rotateX(65deg) rotate(45deg);*/
-    color: #000000;
-    animation: layers1 1s linear infinite alternate;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
 }
 
-.loader:after {
+.loader::after,
+.loader::before {
     content: '';
+    box-sizing: border-box;
     position: absolute;
-    inset: 0;
-    background: #000000;
-    animation: layerTr 1s linear infinite alternate;
+    left: 0;
+    top: 0;
+    /*background: #FF3D00;*/
+    @apply bg-main;
+    width: 6px;
+    height: 6px;
+    transform: translate(150%, 150%);
+    border-radius: 50%;
 }
 
-@keyframes layers1 {
-    0% {
-        box-shadow: 0px 0px 0 0px;
-        /*transform: scale(1);*/
-    }
-    90%, 100% {
-        box-shadow: 40px 40px 0 -4px;
-        transform: translate(0, -80px) scale(1.4)
-    }
+.loader::before {
+    left: auto;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    transform: translate(-150%, -150%);
 }
 
-@keyframes layerTr {
+@keyframes rotation {
     0% {
-        transform: translate(0, 0) scale(1)
+        transform: rotate(0deg);
     }
     100% {
-        transform: translate(-40px, -40px) scale(1)
+        transform: rotate(360deg);
     }
 }

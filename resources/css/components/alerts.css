@@ -9,7 +9,7 @@
 
 .alert {
     max-width: 600px;
-    @apply border border-solid __var_main_background p-6 rounded-2xl shadow-xl;
+    @apply border border-solid p-6 rounded-2xl shadow-xl __var_main_background_light dark:__var_main_background_dark;
 }
 
 .alert-header {
@@ -48,6 +48,6 @@
     @apply alert border-light color-light;
 }
 
-.alert-dark {
-    @apply alert border-dark color-dark;
+.alert-opposite {
+    @apply alert border-opposite color-opposite;
 }

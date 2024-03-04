@@ -9,7 +9,7 @@
 .card {
     max-width: 600px;
     max-height: 800px;
-    background: var(--mainbg);
+    /*background: var(--mainbg);*/
     @apply overflow-hidden relative rounded-2xl border-2 border-solid flex flex-col justify-between my-2 shadow;
 }
 
@@ -91,10 +91,10 @@
     @apply bg-light;
 }
 
-.card-dark {
-    @apply card border-dark;
+.card-opposite {
+    @apply card border-opposite;
 }
 
-.card-dark .card-greeter {
-    @apply bg-dark;
+.card-opposite .card-greeter {
+    @apply bg-opposite dark:text-black;
 }

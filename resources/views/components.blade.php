@@ -1,6 +1,9 @@
 @extends('layouts.app')
 @section('content')
     <div class="_container">
+        <div class="p-10">
+            <button class="btn-main" id="themeSwitcher">Light/Dark mode</button>
+        </div>
         {{-- Buttons --}}
         <div class="p-10 w-full">
             <h3>Buttons:</h3>
@@ -15,7 +18,7 @@
                             class="tooltip-text main">Without class hoverable</span>
                     </button>
                     <button class="m-2 block btn-light hoverable">light</button>
-                    <button class="m-2 block btn-dark hoverable">dark</button>
+                    <button class="m-2 block btn-opposite hoverable">opposite</button>
                 </div>
                 <div class="flex">
                     <button class="m-2 block btn-outline-main hoverable">main</button>
@@ -26,7 +29,7 @@
                     <button class="m-2 block btn-outline-info hoverable">info</button>
                     <button class="m-2 block btn-outline-light tooltip">light <span class="tooltip-text main">Without class hoverable</span>
                     </button>
-                    <button class="m-2 block btn-outline-dark hoverable">dark</button>
+                    <button class="m-2 block btn-outline-opposite hoverable">opposite</button>
                 </div>
             </div>
         </div>
@@ -121,9 +124,9 @@
                 </div>
 
                 <div class="flex justify-center mt-5">
-                    <div class="m-2 block alert-dark">
+                    <div class="m-2 block alert-opposite">
                         <div class="alert-header">
-                            <h4>Dark</h4>
+                            <h4>Opposite</h4>
                         </div>
                         <div class="alert-body">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto autem beatae
@@ -148,12 +151,13 @@
                     </div>
                     <div class="card-body">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab alias
-                            dignissimos doloremque est illo laudantium maxime nam neque nesciunt non officia, optio, quasi
+                            dignissimos doloremque est illo laudantium maxime nam neque nesciunt non officia, optio,
+                            quasi
                             repellat reprehenderit sint!</p>
                     </div>
                     <div class="card-footer">
-                        <button class="hoverable hoverable btn-success">Okay</button>
-                        <button class="hoverable hoverable btn-danger">No</button>
+                        <button class="hoverable btn-success">Okay</button>
+                        <button class="hoverable btn-danger">No</button>
                     </div>
                 </div>
                 <div>
@@ -163,14 +167,15 @@
                             <h2>Title of card</h2>
                         </div>
                         <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab alias
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab
+                                alias
                                 dignissimos doloremque est illo laudantium maxime nam neque nesciunt non officia, optio,
                                 quasi
                                 repellat reprehenderit sint!</p>
                         </div>
                         <div class="card-footer">
-                            <button class="hoverable hoverable btn-success">Okay</button>
-                            <button class="hoverable hoverable btn-danger">No</button>
+                            <button class="btn-success">Okay</button>
+                            <button class="hoverable btn-danger">No</button>
                         </div>
                     </div>
                     <div class="card-danger">
@@ -179,14 +184,15 @@
                             <h2>Title of card</h2>
                         </div>
                         <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab alias
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab
+                                alias
                                 dignissimos doloremque est illo laudantium maxime nam neque nesciunt non officia, optio,
                                 quasi
                                 repellat reprehenderit sint!</p>
                         </div>
                         <div class="card-footer">
-                            <button class="hoverable hoverable btn-success">Okay</button>
-                            <button class="hoverable hoverable btn-danger">No</button>
+                            <button class="hoverable btn-success">Okay</button>
+                            <button class="btn-danger">No</button>
                         </div>
                     </div>
                 </div>
@@ -197,13 +203,15 @@
                             <h2>Title of card</h2>
                         </div>
                         <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab alias
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab
+                                alias
                                 dignissimos doloremque est illo laudantium maxime nam neque nesciunt non officia, optio,
                                 quasi
                                 repellat reprehenderit sint!</p>
                         </div>
                         <div class="card-footer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi, aspernatur eum hic
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi, aspernatur eum
+                                hic
                                 itaque iure laudantium officia pariatur possimus praesentium quam sequi sunt tempore
                                 voluptas voluptates! A accusamus commodi corporis?</p>
                         </div>
@@ -214,13 +222,15 @@
                             <h2>Title of card</h2>
                         </div>
                         <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab alias
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab
+                                alias
                                 dignissimos doloremque est illo laudantium maxime nam neque nesciunt non officia, optio,
                                 quasi
                                 repellat reprehenderit sint!</p>
                         </div>
                         <div class="card-footer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi, aspernatur eum hic
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi, aspernatur eum
+                                hic
                                 itaque iure laudantium officia pariatur possimus praesentium quam sequi sunt tempore
                                 voluptas voluptates! A accusamus commodi corporis?</p>
                         </div>
@@ -235,12 +245,13 @@
                     </div>
                     <div class="card-body">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab alias
-                            dignissimos doloremque est illo laudantium maxime nam neque nesciunt non officia, optio, quasi
+                            dignissimos doloremque est illo laudantium maxime nam neque nesciunt non officia, optio,
+                            quasi
                             repellat reprehenderit sint!</p>
                     </div>
                     <div class="card-footer">
-                        <button class="hoverable hoverable btn-success">Okay</button>
-                        <button class="hoverable hoverable btn-danger">No</button>
+                        <button class="hoverable btn-success">Okay</button>
+                        <button class="hoverable btn-danger">No</button>
                     </div>
                 </div>
                 <div>
@@ -250,13 +261,15 @@
                             <h2>Title of card</h2>
                         </div>
                         <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab alias
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab
+                                alias
                                 dignissimos doloremque est illo laudantium maxime nam neque nesciunt non officia, optio,
                                 quasi
                                 repellat reprehenderit sint!</p>
                         </div>
                         <div class="card-footer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi, aspernatur eum hic
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi, aspernatur eum
+                                hic
                                 itaque iure laudantium officia pariatur possimus praesentium quam sequi sunt tempore
                                 voluptas voluptates! A accusamus commodi corporis?</p>
                         </div>
@@ -267,32 +280,34 @@
                             <h2>Title of card</h2>
                         </div>
                         <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab alias
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab
+                                alias
                                 dignissimos doloremque est illo laudantium maxime nam neque nesciunt non officia, optio,
                                 quasi
                                 repellat reprehenderit sint!</p>
                         </div>
                         <div class="card-footer">
-                            <button class="hoverable hoverable btn-success">Okay</button>
-                            <button class="hoverable hoverable btn-danger">No</button>
+                            <button class="hoverable btn-success">Okay</button>
+                            <button class="hoverable btn-danger">No</button>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div class="card-dark">
+                    <div class="card-opposite">
                         <div class="card-greeter"></div>
                         <div class="card-header">
                             <h2>Title of card</h2>
                         </div>
                         <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab alias
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab
+                                alias
                                 dignissimos doloremque est illo laudantium maxime nam neque nesciunt non officia, optio,
                                 quasi
                                 repellat reprehenderit sint!</p>
                         </div>
                         <div class="card-footer">
-                            <button class="hoverable hoverable btn-success">Okay</button>
-                            <button class="hoverable hoverable btn-danger">No</button>
+                            <button class="hoverable btn-success">Okay</button>
+                            <button class="hoverable btn-danger">No</button>
                         </div>
                     </div>
                     <div class="card-info">
@@ -301,13 +316,15 @@
                             <img src="{{ url("https://fakeimg.pl/600x200/000000/C93030") }}" alt="Test Image">
                         </div>
                         <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab alias
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab
+                                alias
                                 dignissimos doloremque est illo laudantium maxime nam neque nesciunt non officia, optio,
                                 quasi
                                 repellat reprehenderit sint!</p>
                         </div>
                         <div class="card-footer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi, aspernatur eum hic
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi, aspernatur eum
+                                hic
                                 itaque iure laudantium officia pariatur possimus praesentium quam sequi sunt tempore
                                 voluptas voluptates! A accusamus commodi corporis?</p>
                         </div>
@@ -458,60 +475,60 @@
                     <p><span class="pill-main">main</span> <span class="pill-success">success</span> <span
                             class="pill-danger">danger</span> <span class="pill-warning">warning</span> <span
                             class="pill-info">info</span> <span class="pill-light">light</span> <span
-                            class="pill-dark">dark</span></p>
+                            class="pill-opposite">opposite</span></p>
                 </div>
                 <div class="mt-8 flex items-center">
                     <p class="font-bold mr-8">Badges:</p>
                     <div class="badge-group">
                         <div class="badge-main">5</div>
                         <div class="body">
-                            <button class="hoverable hoverable btn-light">click</button>
+                            <button class="hoverable btn-light">click</button>
                         </div>
                     </div>
                     <div class="badge-group">
                         <div class="badge-success">5</div>
                         <div class="body">
-                            <button class="hoverable hoverable btn-dark">notifications</button>
+                            <button class="hoverable btn-opposite">notifications</button>
                         </div>
                     </div>
                     <div class="badge-group">
                         <div class="badge-danger">5</div>
                         <div class="body">
-                            <button class="hoverable hoverable btn-success">open</button>
+                            <button class="hoverable btn-success">open</button>
                         </div>
                     </div>
                     <div class="badge-group">
                         <div class="badge-warning">5</div>
                         <div class="body">
-                            <button class="hoverable hoverable btn-info">read</button>
+                            <button class="hoverable btn-info">read</button>
                         </div>
                     </div>
                     <div class="badge-group">
                         <div class="badge-info">5</div>
                         <div class="body">
-                            <button class="hoverable hoverable btn-success">success</button>
+                            <button class="hoverable btn-success">success</button>
                         </div>
                     </div>
                     <div class="badge-group">
                         <div class="badge-light">5</div>
                         <div class="body">
-                            <button class="hoverable hoverable btn-dark">close</button>
+                            <button class="hoverable btn-opposite">close</button>
                         </div>
                     </div>
                     <div class="badge-group">
-                        <div class="badge-dark">5</div>
+                        <div class="badge-opposite">5</div>
                         <div class="body">
-                            <button class="hoverable hoverable btn-main">check</button>
+                            <button class="hoverable btn-main">check</button>
                         </div>
                     </div>
                     <div class="badge-group">
-                        <div class="badge-dark">5</div>
+                        <div class="badge-opposite">5</div>
                         <div class="body">
                             <p class="font-bold">Notifications</p>
                         </div>
                     </div>
                     <div class="badge-group">
-                        <div class="badge-dark">5</div>
+                        <div class="badge-opposite">5</div>
                         <div class="body">
                             <a class="font-bold">Notifications</a>
                         </div>
@@ -528,7 +545,7 @@
                     <div class="dot-group">
                         <div class="dot-success dot-to-main"></div>
                         <div class="body">
-                            <button class="btn-dark">notifications</button>
+                            <button class="btn-opposite">notifications</button>
                         </div>
                     </div>
                     <div class="dot-group">
@@ -544,7 +561,7 @@
                         </div>
                     </div>
                     <div class="dot-group">
-                        <div class="dot-info dot-to-dark"></div>
+                        <div class="dot-info dot-to-opposite"></div>
                         <div class="body">
                             <button class="btn-success">success</button>
                         </div>
@@ -552,17 +569,17 @@
                     <div class="dot-group">
                         <div class="dot-light dot-to-danger"></div>
                         <div class="body">
-                            <button class="btn-dark">close</button>
+                            <button class="btn-opposite">close</button>
                         </div>
                     </div>
                     <div class="dot-group">
-                        <div class="dot-dark dot-to-main"></div>
+                        <div class="dot-opposite dot-to-main"></div>
                         <div class="body">
                             <button class="hoverable btn-main btn-no-hover">check</button>
                         </div>
                     </div>
                     <div class="dot-group">
-                        <div class="dot-dark dot-to-main"></div>
+                        <div class="dot-opposite dot-to-main"></div>
                         <div class="body">
                             <p class="font-bold">Notifications</p>
                         </div>
@@ -582,7 +599,7 @@
                 <x-akar-location width="40px" class="color-success"/>
                 <x-akar-thumbs-up width="40px" class="color-light"/>
                 <x-akar-instagram-fill width="40px" class="color-info"/>
-                <x-akar-facebook-fill width="40px" class="color-dark"/>
+                <x-akar-facebook-fill width="40px" class="color-opposite"/>
                 <x-akar-circle-x width="40px" class="color-main"/>
             </div>
             <small class="font-bold">
@@ -600,7 +617,7 @@
                 <button class="hoverable btn-warning modal-on modal-of-warning">Warning Modal</button>
                 <button class="hoverable btn-info modal-on modal-of-info">Info Modal</button>
                 <button class="hoverable btn-light modal-on modal-of-light">Light Modal</button>
-                <button class="hoverable btn-dark modal-on modal-of-dark">Dark Modal</button>
+                <button class="hoverable btn-opposite modal-on modal-of-opposite">Opposite Modal</button>
             </div>
             <div class="flex flex-wrap gap-12">
                 <div class="modal-main modal-component-example">
@@ -608,9 +625,11 @@
                         <h3>Modal Example Title</h3>
                     </div>
                     <div class="modal-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam perferendis
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam
+                            perferendis
                             quo
-                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum magni
+                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum
+                            magni
                             natus quis quo.</p>
                         <form>
                             <div class="input-group w-1/2 mt-5">
@@ -626,13 +645,17 @@
                         <h3>Modal Example Title</h3>
                     </div>
                     <div class="modal-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam perferendis
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam
+                            perferendis
                             quo
-                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum magni
+                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum
+                            magni
                             natus quis quo.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam perferendis
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam
+                            perferendis
                             quo
-                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum magni
+                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum
+                            magni
                             natus quis quo.</p>
 
                         <button class="hoverable btn-success mt-4">OK</button>
@@ -644,13 +667,17 @@
                         <h3>Modal Example Title</h3>
                     </div>
                     <div class="modal-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam perferendis
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam
+                            perferendis
                             quo
-                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum magni
+                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum
+                            magni
                             natus quis quo.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam perferendis
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam
+                            perferendis
                             quo
-                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum magni
+                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum
+                            magni
                             natus quis quo.</p>
 
                         <button class="hoverable btn-success mt-4">OK</button>
@@ -662,13 +689,17 @@
                         <h3>Modal Example Title</h3>
                     </div>
                     <div class="modal-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam perferendis
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam
+                            perferendis
                             quo
-                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum magni
+                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum
+                            magni
                             natus quis quo.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam perferendis
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam
+                            perferendis
                             quo
-                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum magni
+                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum
+                            magni
                             natus quis quo.</p>
 
                         <button class="hoverable btn-success mt-4">OK</button>
@@ -680,13 +711,17 @@
                         <h3>Modal Example Title</h3>
                     </div>
                     <div class="modal-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam perferendis
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam
+                            perferendis
                             quo
-                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum magni
+                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum
+                            magni
                             natus quis quo.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam perferendis
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam
+                            perferendis
                             quo
-                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum magni
+                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum
+                            magni
                             natus quis quo.</p>
 
                         <button class="hoverable btn-success mt-4">OK</button>
@@ -698,31 +733,39 @@
                         <h3>Modal Example Title</h3>
                     </div>
                     <div class="modal-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam perferendis
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam
+                            perferendis
                             quo
-                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum magni
+                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum
+                            magni
                             natus quis quo.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam perferendis
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam
+                            perferendis
                             quo
-                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum magni
+                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum
+                            magni
                             natus quis quo.</p>
 
                         <button class="hoverable btn-success mt-4">OK</button>
                         <button class="hoverable btn-info mt-4">Cancel</button>
                     </div>
                 </div>
-                <div class="modal-dark modal-component-example">
+                <div class="modal-opposite modal-component-example">
                     <div class="modal-header">
                         <h3>Modal Example Title</h3>
                     </div>
                     <div class="modal-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam perferendis
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam
+                            perferendis
                             quo
-                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum magni
+                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum
+                            magni
                             natus quis quo.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam perferendis
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam
+                            perferendis
                             quo
-                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum magni
+                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum
+                            magni
                             natus quis quo.</p>
 
                         <button class="hoverable btn-success mt-4">OK</button>
@@ -958,7 +1001,7 @@
                         <td>Italy</td>
                     </tr>
                 </table>
-                <table class="mt-4 table-dark table-strip-dark table-borderless table-hover">
+                <table class="mt-4 table-opposite table-strip-opposite table-borderless table-hover">
                     <tr>
                         <th>Company</th>
                         <th>Contact</th>
@@ -995,7 +1038,6 @@
                         <td>Italy</td>
                     </tr>
                 </table>
-
             </div>
         </div>
 
@@ -1021,20 +1063,24 @@
                         <button data-tab="3" class="tab-on">Tab 3</button>
                     </div>
                     <div class="tab-body" data-tab="1">
-                        <p>Stole Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet deleniti dolor
+                        <p>Stole Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet deleniti
+                            dolor
                             et,
                             facilis illo ipsa molestiae obcaecati officiis optio perferendis provident quas quibusdam
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1053,10 +1099,12 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
@@ -1075,20 +1123,24 @@
                         <img class="mt-5" src="{{ url("https://fakeimg.pl/600x400/000000/C93030") }}" alt="Test Image">
                     </div>
                     <div class="tab-body hidden" data-tab="3">
-                        <p>Kole Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet deleniti dolor
+                        <p>Kole Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet deleniti
+                            dolor
                             et,
                             facilis illo ipsa molestiae obcaecati officiis optio perferendis provident quas quibusdam
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1117,14 +1169,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1143,14 +1198,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1169,14 +1227,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1202,14 +1263,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1228,14 +1292,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1254,14 +1321,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1289,14 +1359,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1315,14 +1388,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1341,14 +1417,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1377,14 +1456,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1403,14 +1485,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1429,14 +1514,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1462,14 +1550,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1488,14 +1579,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1514,14 +1608,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1535,7 +1632,7 @@
                         <img class="mt-5" src="{{ url("https://fakeimg.pl/600x400/000000/C93030") }}" alt="Test Image">
                     </div>
                 </div>
-                <div class="mt-12 tab-group-dark">
+                <div class="mt-12 tab-group-opposite">
                     <div class="tab-header">
                         <button data-tab="1" class="tab-on tab-active">Tab 1</button>
                         <button data-tab="2" class="tab-on">Tab 2</button>
@@ -1547,14 +1644,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1573,14 +1673,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1599,14 +1702,17 @@
                             reiciendis tempore? Eius modi perferendis possimus!Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
-                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            repellat repudiandae ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. A
                             aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             repellat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam
+                            aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
                             rept amet, consectetur adipisicing elit. A aliquam, aliquid, aperiam aspernatur
                             assumenda cupiditate eius et eveniet excepturi harum in iste minima neque nihil, pariatur
@@ -1634,7 +1740,8 @@
                     <button class="hoverable accordion-on">Section 1</button>
                     <div class="accordion-body">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur iure iusto quas qui
-                            sapiente soluta? Accusamus at distinctio ipsum? Adipisci dolor error id nihil officia provident
+                            sapiente soluta? Accusamus at distinctio ipsum? Adipisci dolor error id nihil officia
+                            provident
                             rem suscipit unde!</p>
                     </div>
                 </div>
@@ -1642,7 +1749,8 @@
                     <button class="hoverable accordion-on">Section 1</button>
                     <div class="accordion-body hidden">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur iure iusto quas qui
-                            sapiente soluta? Accusamus at distinctio ipsum? Adipisci dolor error id nihil officia provident
+                            sapiente soluta? Accusamus at distinctio ipsum? Adipisci dolor error id nihil officia
+                            provident
                             rem suscipit unde!</p>
                     </div>
                 </div>
@@ -1650,7 +1758,8 @@
                     <button class="hoverable accordion-on">Section 1</button>
                     <div class="accordion-body hidden">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur iure iusto quas qui
-                            sapiente soluta? Accusamus at distinctio ipsum? Adipisci dolor error id nihil officia provident
+                            sapiente soluta? Accusamus at distinctio ipsum? Adipisci dolor error id nihil officia
+                            provident
                             rem suscipit unde!</p>
                     </div>
                 </div>
@@ -1658,7 +1767,8 @@
                     <button class="hoverable accordion-on">Section 1</button>
                     <div class="accordion-body hidden">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur iure iusto quas qui
-                            sapiente soluta? Accusamus at distinctio ipsum? Adipisci dolor error id nihil officia provident
+                            sapiente soluta? Accusamus at distinctio ipsum? Adipisci dolor error id nihil officia
+                            provident
                             rem suscipit unde!</p>
                     </div>
                 </div>
@@ -1666,7 +1776,8 @@
                     <button class="hoverable accordion-on">Section 1</button>
                     <div class="accordion-body hidden">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur iure iusto quas qui
-                            sapiente soluta? Accusamus at distinctio ipsum? Adipisci dolor error id nihil officia provident
+                            sapiente soluta? Accusamus at distinctio ipsum? Adipisci dolor error id nihil officia
+                            provident
                             rem suscipit unde!</p>
                     </div>
                 </div>
@@ -1674,15 +1785,17 @@
                     <button class="hoverable accordion-on">Section 1</button>
                     <div class="accordion-body hidden">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur iure iusto quas qui
-                            sapiente soluta? Accusamus at distinctio ipsum? Adipisci dolor error id nihil officia provident
+                            sapiente soluta? Accusamus at distinctio ipsum? Adipisci dolor error id nihil officia
+                            provident
                             rem suscipit unde!</p>
                     </div>
                 </div>
-                <div class="accordion-group-dark">
+                <div class="accordion-group-opposite">
                     <button class="hoverable accordion-on">Section 1</button>
                     <div class="accordion-body hidden">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur iure iusto quas qui
-                            sapiente soluta? Accusamus at distinctio ipsum? Adipisci dolor error id nihil officia provident
+                            sapiente soluta? Accusamus at distinctio ipsum? Adipisci dolor error id nihil officia
+                            provident
                             rem suscipit unde!</p>
                     </div>
                 </div>
@@ -1711,8 +1824,8 @@
                 <button class="hoverable btn-light tooltip">Hover!
                     <span class="tooltip-text light">Tooltip text help text whats going on</span>
                 </button>
-                <button class="hoverable btn-dark tooltip">Hover!
-                    <span class="tooltip-text dark">Tooltip text help text whats going on</span>
+                <button class="hoverable btn-opposite tooltip">Hover!
+                    <span class="tooltip-text opposite">Tooltip text help text whats going on</span>
                 </button>
             </div>
         </div>
@@ -1722,7 +1835,7 @@
             <h3>Loader/Spinner:</h3>
             <a href="https://cssloaders.github.io/" class="font-bold">For more open this.</a>
             <div class="my-10 pl-16">
-                <span class="loader mt-64 ml-64"></span>
+                <span class="loader"></span>
             </div>
         </div>
 
@@ -1738,8 +1851,8 @@
                     <button class="m-2 block btn-warning hover:anim_scaleUp">Scale Up</button>
                     <button class="m-2 block btn-info hover:anim_scaleDown">Scale Down</button>
                     <button class="m-2 block btn-light hover:anim_wingLeft">Wing Left</button>
-                    <button class="m-2 block btn-outline-dark hover:anim_powerUp">Power Up</button>
-                    <button class="m-2 block btn-dark hover:anim_wingRight">Wing Right</button>
+                    <button class="m-2 block btn-outline-opposite hover:anim_powerUp">Power Up</button>
+                    <button class="m-2 block btn-opposite hover:anim_wingRight">Wing Right</button>
                     <button class="m-2 block btn-outline-main hover:anim_streetRotor">Street Rotor</button>
                     <button class="m-2 block btn-outline-success hover:anim_moveUp">Move Up</button>
                     <button class="m-2 block btn-outline-danger hover:anim_moveDown">Move Down</button>

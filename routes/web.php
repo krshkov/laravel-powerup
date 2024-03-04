@@ -27,6 +27,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return view('components');
     })->name("components");
 
+    Route::put('/user/set/lighting', [\App\Http\Controllers\UserController::class, 'setLightingMode']);
+
     Route::middleware(['password.confirm'])->group(function () {
         // High value actions
     });

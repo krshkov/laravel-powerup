@@ -57,7 +57,7 @@
     @endif
 
     @if (session('dark'))
-        <div class="alert-dark fadeIn">
+        <div class="alert-opposite fadeIn">
             <div class="alert-header">
                 <h4 class="alert-title">{{ config('app.name') }}</h4>
             </div>
@@ -110,7 +110,7 @@
         </div>
         <div class="alert-body"></div>
     </div>
-    <div class="alert-dark hidden">
+    <div class="alert-opposite hidden">
         <div class="alert-header">
             <h4 class="alert-title">{{ config('app.name') }}</h4>
         </div>

@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('password');
             $table->boolean('subscriber')->default(false);
             $table->boolean('accepted_terms_and_conditions')->default(false);
+            $table->boolean('dark_mode')->default(true);
             $table->rememberToken();
             $table->timestamps();
         });

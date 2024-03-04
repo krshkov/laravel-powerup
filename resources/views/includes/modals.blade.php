@@ -35,7 +35,7 @@
         </div>
         <div class="modal-body"></div>
     </div>
-    <div class="hidden modal-dark fadeInFast">
+    <div class="hidden modal-opposite fadeInFast">
         <div class="modal-header">
             <h3 class="modal-title">}</h3>
         </div>

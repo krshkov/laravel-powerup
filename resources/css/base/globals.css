@@ -10,4 +10,5 @@ body {
     position: relative;
     max-width: 1920px;
     margin: 0 auto;
+    @apply __var_main_background_light dark:__var_main_background_dark color-black dark:color-white;
 }
