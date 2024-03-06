@@ -90,7 +90,7 @@
 
         // Show Modal
         function modal(html = false, content = '', style = 'main', title = appName) {
-            let elm = $('.modal-' + style);
+            let elm = $('.modal-' + style + ':not(.modal-component-example)');
             let modalOff = $('.modal-' + style + ' .btn-close');
 
             elm.find('.modal-title').text(title);
