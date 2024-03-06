@@ -49,6 +49,10 @@
     }
 }
 
+input:not([type=radio]):not([type=checkbox]):not([type=color]){
+    width: 100%;
+}
+
 input, select, textarea {
     @apply border-2 border-solid border-main shadow p-2 bg-transparent;
     border-radius: 8px;

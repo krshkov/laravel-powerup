@@ -38,7 +38,7 @@
 h1 {
     /*font-family: var(--headingfont);*/
     font-family: var(--basefont);
-    font-size: 72px;
+    font-size: clamp(52px, 8vw + 1rem, 72px);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -47,7 +47,7 @@ h1 {
 h2 {
     /*font-family: var(--headingfont);*/
     font-family: var(--basefont);
-    font-size: 48px;
+    font-size: clamp(38px, 6vw + 1rem, 48px);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -56,7 +56,7 @@ h2 {
 h3 {
     /*font-family: var(--headingfont);*/
     font-family: var(--basefont);
-    font-size: 36px;
+    font-size: clamp(28px, 4vw + 1rem, 36px);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -65,7 +65,7 @@ h3 {
 h4 {
     /*font-family: var(--headingfont);*/
     font-family: var(--basefont);
-    font-size: 24px;
+    font-size: clamp(20px, 2vw + 1rem, 24px);
     font-style: normal;
     font-weight: 600;
     line-height: normal;

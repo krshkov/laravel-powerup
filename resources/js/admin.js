@@ -166,6 +166,37 @@
                     $(this).removeClass('text-white').find('.card-greeter').removeClass('anim_scaleFull').addClass('anim_scaleDownFull');
                 }
             });
+
+        /* Tooltip Appearance */
+        $('.tooltip')
+            .on('mouseover', function () {
+                const VARIABLE_SPACE = 5;
+                let box = $(this).find('.tooltip-text');
+                let boxProps = box.get(0).getBoundingClientRect();
+                let boxWidth = boxProps.width;
+                let boxSpace = Math.abs(parseInt(box.css('right')));
+                let boxDiff = boxSpace - boxWidth;
+                let parentProps = $(this).get(0).getBoundingClientRect();
+                let parentWidth = parentProps.width;
+                let parentHeight = parentProps.height;
+
+                if (boxProps.right > window.innerWidth - VARIABLE_SPACE) {
+                    // ERR
+                    /* first try to put left, if not put bellow */
+                    box.css('right', parentWidth + boxDiff);
+                    boxProps = box.get(0).getBoundingClientRect();
+
+                    if (boxProps.left <= VARIABLE_SPACE) {
+                        /* bellow */
+                        box.css('left', 0).css('top', parentHeight + boxDiff);
+                    }
+                }
+
+                box.css('visibility', 'visible').removeClass('anim_fadeOutFast').addClass('anim_fadeInFast');
+            })
+            .on('mouseout', function () {
+                $(this).find('.tooltip-text').removeClass('anim_fadeInFast').addClass('anim_fadeOutFast').css('visibility', 'hidden');
+            });
     });
 })(jQuery);
 

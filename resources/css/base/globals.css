@@ -5,10 +5,15 @@
     - Heading font
     - Base font
 */
-body {
+
+html, body {
     scroll-behavior: smooth;
     position: relative;
+    overflow-x: hidden;
+    @apply __var_main_background_light dark:__var_main_background_dark color-black dark:color-white;
+}
+
+main {
     max-width: 1920px;
     margin: 0 auto;
-    @apply __var_main_background_light dark:__var_main_background_dark color-black dark:color-white;
 }
