@@ -10,7 +10,7 @@
     max-width: 600px;
     max-height: 800px;
     /*background: var(--mainbg);*/
-    @apply overflow-hidden relative rounded-2xl border-2 border-solid flex flex-col justify-between my-2 shadow;
+    @apply overflow-hidden relative rounded-2xl border-2 border-solid flex flex-col justify-between my-2;
 }
 
 .card-greeter {
@@ -44,7 +44,7 @@
 }
 
 .card-main {
-    @apply card border-main;
+    @apply card border-main shadow-2xl shadow-main;
 }
 
 .card-main .card-greeter {
@@ -52,7 +52,7 @@
 }
 
 .card-success {
-    @apply card border-success;
+    @apply card border-success shadow-2xl shadow-success;
 }
 
 .card-success .card-greeter {
@@ -60,7 +60,7 @@
 }
 
 .card-danger {
-    @apply card border-danger;
+    @apply card border-danger shadow-2xl shadow-danger;
 }
 
 .card-danger .card-greeter {
@@ -68,7 +68,7 @@
 }
 
 .card-warning {
-    @apply card border-warning;
+    @apply card border-warning shadow-2xl shadow-warning;
 }
 
 .card-warning .card-greeter {
@@ -76,7 +76,7 @@
 }
 
 .card-info {
-    @apply card border-info;
+    @apply card border-info shadow-2xl shadow-info;
 }
 
 .card-info .card-greeter {
@@ -84,7 +84,7 @@
 }
 
 .card-light {
-    @apply card border-light;
+    @apply card border-light shadow-2xl shadow-light;
 }
 
 .card-light .card-greeter {
@@ -92,7 +92,7 @@
 }
 
 .card-opposite {
-    @apply card border-opposite;
+    @apply card border-opposite shadow-2xl shadow-opposite;
 }
 
 .card-opposite .card-greeter {

@@ -15,4 +15,8 @@
     .max-w-form {
         max-width: var(--max-w-form);
     }
+
+    .hard-shadow-none{
+        box-shadow: none !important;
+    }
 }

@@ -16,7 +16,7 @@
 }
 
 .modal {
-    @apply my-4 mx-auto border-2 border-solid rounded-2xl max-w-half fixed shadow-xl __var_main_background_light dark:__var_main_background_dark;
+    @apply my-4 mx-auto border-2 border-solid rounded-2xl max-w-half fixed __var_main_background_light dark:__var_main_background_dark;
     /*background: var(--mainbg);*/
     left: 0;
     right: 0;
@@ -39,7 +39,7 @@
 }
 
 .modal-main {
-    @apply modal border-main color-main;
+    @apply modal border-main color-main shadow-2xl shadow-main;
 }
 
 .modal-main .modal-header {
@@ -47,7 +47,7 @@
 }
 
 .modal-success {
-    @apply modal border-success color-success;
+    @apply modal border-success color-success shadow-2xl shadow-success;
 }
 
 .modal-success .modal-header {
@@ -55,7 +55,7 @@
 }
 
 .modal-danger {
-    @apply modal border-danger color-danger;
+    @apply modal border-danger color-danger shadow-2xl shadow-danger;
 }
 
 .modal-danger .modal-header {
@@ -63,7 +63,7 @@
 }
 
 .modal-warning {
-    @apply modal border-warning color-warning;
+    @apply modal border-warning color-warning shadow-2xl shadow-warning;
 }
 
 .modal-warning .modal-header {
@@ -71,7 +71,7 @@
 }
 
 .modal-info {
-    @apply modal border-info color-info;
+    @apply modal border-info color-info shadow-2xl shadow-info;
 }
 
 .modal-info .modal-header {
@@ -79,7 +79,7 @@
 }
 
 .modal-light {
-    @apply modal border-light color-light;
+    @apply modal border-light color-light shadow-2xl shadow-light;
 }
 
 .modal-light .modal-header {
@@ -87,7 +87,7 @@
 }
 
 .modal-opposite {
-    @apply modal border-opposite;
+    @apply modal border-opposite shadow-2xl shadow-opposite;
 }
 
 .modal-opposite .modal-header {

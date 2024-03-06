@@ -35,7 +35,7 @@ td, th {
 }
 
 .table-main {
-    @apply table border-main;
+    @apply table border-main shadow shadow-main;
 }
 
 .table-main td, .table-main th {
@@ -47,7 +47,7 @@ td, th {
 }
 
 .table-success {
-    @apply table border-success;
+    @apply table border-success shadow shadow-success;
 }
 
 .table-success td, .table-success th {
@@ -59,7 +59,7 @@ td, th {
 }
 
 .table-danger {
-    @apply table border-danger;
+    @apply table border-danger shadow shadow-danger;
 }
 
 .table-danger td, .table-danger th {
@@ -71,7 +71,7 @@ td, th {
 }
 
 .table-warning {
-    @apply table border-warning;
+    @apply table border-warning shadow shadow-warning;
 }
 
 .table-warning td, .table-warning th {
@@ -83,7 +83,7 @@ td, th {
 }
 
 .table-info {
-    @apply table border-info;
+    @apply table border-info shadow shadow-info;
 }
 
 .table-info td, .table-info th {
@@ -95,7 +95,7 @@ td, th {
 }
 
 .table-light {
-    @apply table border-light;
+    @apply table border-light shadow shadow-light;
 }
 
 .table-light td, .table-light th {
@@ -107,7 +107,7 @@ td, th {
 }
 
 .table-opposite {
-    @apply table border-opposite;
+    @apply table border-opposite shadow shadow-opposite;
 }
 
 .table-opposite td, .table-opposite th {

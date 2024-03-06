@@ -9,7 +9,7 @@
 
 .alert {
     max-width: 600px;
-    @apply border border-solid p-6 rounded-2xl shadow-xl __var_main_background_light dark:__var_main_background_dark;
+    @apply border border-solid p-6 rounded-2xl __var_main_background_light dark:__var_main_background_dark;
 }
 
 .alert-header {
@@ -25,29 +25,29 @@
 }
 
 .alert-main {
-    @apply alert border-main color-main;
+    @apply alert border-main color-main shadow-2xl shadow-main;
 }
 
 .alert-success {
-    @apply alert border-success color-success;
+    @apply alert border-success color-success shadow-2xl shadow-success;
 }
 
 .alert-danger {
-    @apply alert border-danger color-danger;
+    @apply alert border-danger color-danger shadow-2xl shadow-danger;
 }
 
 .alert-warning {
-    @apply alert border-warning color-warning;
+    @apply alert border-warning color-warning shadow-2xl shadow-warning;
 }
 
 .alert-info {
-    @apply alert border-info color-info;
+    @apply alert border-info color-info shadow-2xl shadow-info;
 }
 
 .alert-light {
-    @apply alert border-light color-light;
+    @apply alert border-light color-light shadow-2xl shadow-light;
 }
 
 .alert-opposite {
-    @apply alert border-opposite color-opposite;
+    @apply alert border-opposite color-opposite shadow-2xl shadow-opposite;
 }

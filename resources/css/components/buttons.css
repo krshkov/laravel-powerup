@@ -11,11 +11,11 @@
     - Outline buttons
 */
 .btn {
-    @apply px-3 py-1.5 rounded-xl border font-semibold shadow;
+    @apply px-3 py-1.5 rounded-xl border font-semibold;
 }
 
 .btn-main {
-    @apply btn color-white dark:color-black bg-main border-main;
+    @apply btn color-white dark:color-black bg-main border-main shadow-2xl shadow-main;
 }
 
 .btn-main.hoverable:hover {
@@ -24,7 +24,7 @@
 }
 
 .btn-success {
-    @apply btn color-white dark:color-black bg-success border-success;
+    @apply btn color-white dark:color-black bg-success border-success shadow-2xl shadow-success;
 }
 
 .btn-success.hoverable:hover {
@@ -33,7 +33,7 @@
 }
 
 .btn-danger {
-    @apply btn color-white dark:color-black bg-danger border-danger;
+    @apply btn color-white dark:color-black bg-danger border-danger shadow-2xl shadow-danger;
 }
 
 .btn-danger.hoverable:hover {
@@ -42,7 +42,7 @@
 }
 
 .btn-warning {
-    @apply btn color-white dark:color-black bg-warning border-warning;
+    @apply btn color-white dark:color-black bg-warning border-warning shadow-2xl shadow-warning;
 }
 
 .btn-warning.hoverable:hover {
@@ -51,7 +51,7 @@
 }
 
 .btn-info {
-    @apply btn color-white dark:color-black bg-info border-info;
+    @apply btn color-white dark:color-black bg-info border-info shadow-2xl shadow-info;
 }
 
 .btn-info.hoverable:hover {
@@ -60,7 +60,7 @@
 }
 
 .btn-light {
-    @apply btn color-white dark:color-black bg-light border-light;
+    @apply btn color-white dark:color-black bg-light border-light shadow-2xl shadow-light;
 }
 
 .btn-light.hoverable:hover {
@@ -69,7 +69,7 @@
 }
 
 .btn-opposite {
-    @apply btn color-white dark:color-black bg-opposite border-opposite;
+    @apply btn color-white dark:color-black bg-opposite border-opposite shadow-2xl shadow-opposite;
 }
 
 .btn-opposite.hoverable:hover {
@@ -78,7 +78,7 @@
 }
 
 .btn-outline-main {
-    @apply btn color-main border-solid border-main;
+    @apply btn color-main border-solid border-main shadow-2xl shadow-main;
 }
 
 .btn-outline-main.hoverable:hover {
@@ -87,7 +87,7 @@
 }
 
 .btn-outline-success {
-    @apply btn color-success border-solid border-success;
+    @apply btn color-success border-solid border-success shadow-2xl shadow-success;
 }
 
 .btn-outline-success.hoverable:hover {
@@ -96,7 +96,7 @@
 }
 
 .btn-outline-danger {
-    @apply btn color-danger border-solid border-danger;
+    @apply btn color-danger border-solid border-danger shadow-2xl shadow-danger;
 }
 
 .btn-outline-danger.hoverable:hover {
@@ -105,7 +105,7 @@
 }
 
 .btn-outline-warning {
-    @apply btn color-warning border-solid border-warning;
+    @apply btn color-warning border-solid border-warning shadow-2xl shadow-warning;
 }
 
 .btn-outline-warning.hoverable:hover {
@@ -114,7 +114,7 @@
 }
 
 .btn-outline-info {
-    @apply btn color-info border-solid border-info;
+    @apply btn color-info border-solid border-info shadow-2xl shadow-info;
 }
 
 .btn-outline-info.hoverable:hover {
@@ -123,7 +123,7 @@
 }
 
 .btn-outline-light {
-    @apply btn color-light border-solid border-light;
+    @apply btn color-light border-solid border-light shadow-2xl shadow-light;
 }
 
 .btn-outline-light.hoverable:hover {
@@ -132,7 +132,7 @@
 }
 
 .btn-outline-opposite {
-    @apply btn color-opposite border-solid border-opposite;
+    @apply btn color-opposite border-solid border-opposite shadow-2xl shadow-opposite;
 }
 
 .btn-outline-opposite.hoverable:hover {

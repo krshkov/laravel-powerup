@@ -7,6 +7,9 @@
     <h4 class="color-main text-center font-bold italic underline underline-offset-8 hover:anim_scaleUp anim_moveUp">You
         can copy components from here and configure them based on your needs!</h4>
 
+    <p class="text-center">If you want to turn off the shadow on any component use the class <span class="italic font-bold">hard-shadow-none</span></p>
+    <p class="text-center">Working on the configuration, so you can change only in the config if you want shadows or not</p>
+
     {{-- Buttons --}}
     <div class="py-10 w-full">
         <h3 class="text-center lg:text-left">Buttons:</h3>
@@ -1542,7 +1545,7 @@
                 <small class="color-main">scroll on the y axis</small>
             </div>
 
-            {{--Mobile Table Records--}}
+            {{-- Mobile Table Records --}}
             <div class="my-28 ">
                 <h4>Mobile Table Records:</h4>
                 <div class="mt-8 flex flex-wrap justify-around items-center gap-16">
