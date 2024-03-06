@@ -197,6 +197,18 @@
             .on('mouseout', function () {
                 $(this).find('.tooltip-text').removeClass('anim_fadeInFast').addClass('anim_fadeOutFast').css('visibility', 'hidden');
             });
+
+        /* nav bar burger switch by Zvone */
+        let mobileSwitch = false;
+        $('#menu-burger').on('click', function () {
+            if (!mobileSwitch) {
+                $('#mobile-nav').removeClass('hidden').addClass('flex');
+                mobileSwitch = true;
+            } else {
+                $('#mobile-nav').addClass('hidden').removeClass('flex');
+                mobileSwitch = false;
+            }
+        });
     });
 })(jQuery);
 
