@@ -7,8 +7,10 @@
     <h4 class="color-main text-center font-bold italic underline underline-offset-8 hover:anim_scaleUp anim_moveUp">You
         can copy components from here and configure them based on your needs!</h4>
 
-    <p class="text-center">If you want to turn off the shadow on any component use the class <span class="italic font-bold">hard-shadow-none</span></p>
-    <p class="text-center">Working on the configuration, so you can change only in the config if you want shadows or not</p>
+    <p class="text-center">If you want to turn off the shadow on any component use the class <span
+            class="italic font-bold">hard-shadow-none</span></p>
+    <p class="text-center">Working on the configuration, so you can change only in the config if you want shadows or
+        not</p>
 
     {{-- Buttons --}}
     <div class="py-10 w-full">
@@ -142,6 +144,27 @@
                 </div>
                 <div class="card-body">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab alias
+                        dignissimos doloremque est illo laudantium maxime nam neque nesciunt non officia, optio,
+                        quasi
+                        repellat reprehenderit sint!</p>
+                </div>
+                <div class="card-footer">
+                    <button class="hoverable btn-success">Okay</button>
+                    <button class="hoverable btn-danger">No</button>
+                </div>
+            </div>
+            <div class="card-opposite">
+                <div class="card-greeter"></div>
+                <div class="card-header">
+                    <h2 class="color-main">Long title of the current card</h2>
+                </div>
+                <div class="card-body">
+                    <p class="color-main">If you want to get rid of the text that is above the greeter add this code in
+                        <span class="underline">cards.css</span> <span class="italic font-bold">.card-header > h2 { @apply pr-10;}</span>
+                        <small class="block">Instead of h2 you can edit it in your needs.</small>
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab
+                        alias
                         dignissimos doloremque est illo laudantium maxime nam neque nesciunt non officia, optio,
                         quasi
                         repellat reprehenderit sint!</p>
@@ -292,23 +315,6 @@
                         hic
                         itaque iure laudantium officia pariatur possimus praesentium quam sequi sunt tempore
                         voluptas voluptates! A accusamus commodi corporis?</p>
-                </div>
-            </div>
-            <div class="card-opposite">
-                <div class="card-greeter"></div>
-                <div class="card-header">
-                    <h2>Title of card</h2>
-                </div>
-                <div class="card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis, placeat. A ab
-                        alias
-                        dignissimos doloremque est illo laudantium maxime nam neque nesciunt non officia, optio,
-                        quasi
-                        repellat reprehenderit sint!</p>
-                </div>
-                <div class="card-footer">
-                    <button class="hoverable btn-success">Okay</button>
-                    <button class="hoverable btn-danger">No</button>
                 </div>
             </div>
         </div>
