@@ -211,9 +211,11 @@
         $('#menu-burger').on('click', function () {
             if (!mobileSwitch) {
                 $('#mobile-nav').removeClass('hidden').addClass('flex');
+                $('html').css('overflow', 'hidden');
                 mobileSwitch = true;
             } else {
                 $('#mobile-nav').addClass('hidden').removeClass('flex');
+                $('html').css('overflow', 'auto');
                 mobileSwitch = false;
             }
         });
