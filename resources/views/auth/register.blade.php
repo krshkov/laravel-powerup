@@ -9,26 +9,17 @@
             <form action="{{ route('register') }}" method="POST">
                 @method('POST')
                 @csrf
-                <div class="flex justify-between">
-                    <div class="input-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" id="firstName" required>
-                        @error('firstName')
-                        <small>{{ $errors->first('firstName') }}</small>
-                        @enderror
-                    </div>
-                    <div class="input-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" id="lastName" required>
-                        @error('lastName')
-                        <small>{{ $errors->first('lastName') }}</small>
-                        @enderror
-                    </div>
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                    @error('name')
+                    <small>{{ $errors->first('name') }}</small>
+                    @enderror
                 </div>
 
                 <div class="input-group">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" name="phone" id="phone" required>
+                    <input type="tel" name="phone" id="phone">
                     @error('phone')
                     <small>{{ $errors->first('phone') }}</small>
                     @enderror
