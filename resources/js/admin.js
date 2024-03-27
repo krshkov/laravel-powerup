@@ -21,6 +21,11 @@
         smoke.addClass('hard-hidden');
         loader.addClass('hard-hidden');
 
+        // Facebook redirect url fix
+        if (window.location.hash == '#_=_') {
+            window.location.hash = '';
+        }
+
         // Ajax Setup
         $.ajaxSetup({
             headers: {
