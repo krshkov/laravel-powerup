@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/* Socialite OAuthorization */
+Route::get('/login/{provider}', [App\Actions\Socialite\Controller::class, 'redirectTo'])->where('provider', config('services.allowed_socialite_providers'))->name('socialite.redirect');
+Route::get('/login/{provider}/callback', [App\Actions\Socialite\Controller::class, 'handleCallback'])->where('provider', config('services.allowed_socialite_providers'))->name('socialite.callback');
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/home', function () {
         return view('home');

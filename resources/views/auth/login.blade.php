@@ -41,9 +41,11 @@
             <p class="mt-4 text-center">------------------- OR -------------------</p>
 
             <div class="mt-4 flex items-center justify-center gap-8">
-                <a href="#"><x-akar-google-fill width="24px"/></a>
+                <a href="{{ route('socialite.redirect', 'google') }}"><x-akar-google-fill width="24px"/></a>
                 <span>|</span>
-                <a href="#"><x-vaadin-facebook width="24px"/></a>
+                <a href="{{ route('socialite.redirect', 'facebook') }}"><x-vaadin-facebook width="24px"/></a>
+                <span>|</span>
+                <a href="{{ route('socialite.redirect', 'github') }}"><x-akar-github-fill width="24px"/></a>
             </div>
 
             <p class="text-center mt-4">Don't have an account? <a href="{{ route('register') }}" class="font-bold">Sign Up</a> <x-akar-arrow-right-thick class="inline" width="20px"/></p>

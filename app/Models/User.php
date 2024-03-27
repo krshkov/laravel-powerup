@@ -30,6 +30,7 @@ class User extends Authenticatable/* implements MustVerifyEmail*/
         'subscriber',
         'accepted_terms_and_conditions',
         'dark_mode',
+        'providers',
     ];
 
     /**
@@ -50,5 +51,6 @@ class User extends Authenticatable/* implements MustVerifyEmail*/
     protected $casts = [
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
+        'providers' => 'array',
     ];
 }

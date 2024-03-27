@@ -4,6 +4,15 @@
         window.modal = modal;
         window.alert = notify;
 
+        // App Name
+        let appName = $('meta[name="app.name"]').attr('content');
+        let csrf = $('meta[name="csrf-token"]').attr('content');
+
+        let appUrl = $('meta[name="app.url"]').attr('content');
+        if (appUrl.endsWith('/')) {
+            appUrl = appUrl.slice(0, -1);
+        }
+
         const ALERT_DELAY = 8000;
 
         // Smoke & Loader Init
@@ -12,13 +21,10 @@
         smoke.addClass('hard-hidden');
         loader.addClass('hard-hidden');
 
-        // App Name
-        let appName = $('meta[name="app.name"]').attr('content');
-
         // Ajax Setup
         $.ajaxSetup({
             headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                'X-CSRF-TOKEN': csrf
             }
         });
 

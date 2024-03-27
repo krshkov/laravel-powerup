@@ -6,6 +6,7 @@
 
     <!-- App's Name -->
     <meta name="app.name" content="{{ config('app.name') }}"/>
+    <meta name="app.url" content="{{ config('app.url') }}"/>
 
     <!-- CSRF Token -->
     <meta name="csrf-param" content="authenticity_token"/>
