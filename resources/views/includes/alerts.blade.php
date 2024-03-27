@@ -12,6 +12,17 @@
         @endforeach
     @endif
 
+    @if (session('error'))
+            <div class="alert-danger fadeIn">
+                <div class="alert-header">
+                    <h4 class="alert-title">Error</h4>
+                </div>
+                <div class="alert-body">
+                    <p>{{ session('error') }}</p>
+                </div>
+            </div>
+    @endif
+
     @if (session('success'))
         <div class="alert-success fadeIn">
             <div class="alert-header">
