@@ -27,8 +27,20 @@ Route::middleware(['auth', 'verified'])->group(function () {
     })->name('home');
 
     Route::get('/components', function () {
-        //return redirect(route('home'))->with('light', 'Project Updated!');
-        return view('components');
+        $modal_content = '
+            <p>This content is sent by the backend, yes, you can send content from the backend to modals!</p>
+            <small>Check the routes/web.php -> components route, so you can understand the way to send it.</small>
+            <h4>Basic Form</h4>
+            <form class="mt-4" method="post" action="/test" enctype="multipart/form-data">
+                <input type="hidden" name="_method" value="PUT">
+                <input type="hidden" name="_token" value="' . csrf_token() . '" autocomplete="off">
+                <input type="text" placeholder="Sample Input">
+                <br>
+                <button class="btn-main hoverable mt-3" type="submit">submit</button>
+            </form>
+        ';
+
+        return view('components')->with(compact('modal_content'));
     })->name("components");
 
     Route::put('/user/set/lighting', [\App\Http\Controllers\UserController::class, 'setLightingMode']);

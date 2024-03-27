@@ -62,7 +62,11 @@
                 }
             });
 
-            modal(false, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam perferendis quo veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum magni natus quis quo.', classname)
+            let content =
+                $(this).data('content')
+                ?? 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam perferendis quo veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum magni natus quis quo.';
+
+            modal(false, content, classname);
         });
 
         /* Tab Switcher */

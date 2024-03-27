@@ -605,8 +605,12 @@
     {{-- Modals --}}
     <div class="py-10 w-full">
         <h3 class="text-center lg:text-left">Modals:</h3>
+        <small class="color-main font-bold">Please click the Main Modal and read. This is a proof that you can send
+            content to modals, from the backend</small>
         <div class="mt-10 flex flex-wrap justify-center lg:justify-start gap-2">
-            <button class="hoverable btn-main modal-on modal-of-main">Main Modal</button>
+            <button class="hoverable btn-main modal-on modal-of-main" data-content="{{ $modal_content ?? '' }}">Main
+                Modal
+            </button>
             <button class="hoverable btn-success modal-on modal-of-success">Success Modal</button>
             <button class="hoverable btn-danger modal-on modal-of-danger">Danger Modal</button>
             <button class="hoverable btn-warning modal-on modal-of-warning">Warning Modal</button>
@@ -622,11 +626,8 @@
                     </div>
                     <div class="modal-body">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laboriosam numquam
-                            perferendis
-                            quo
-                            veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus est et laborum
-                            magni
-                            natus quis quo.</p>
+                            perferendis quo veritatis. Dolor esse fugit illum molestias officia porro. Atque doloribus
+                            est et laborum magni natus quis quo.</p>
                         <form>
                             <div class="input-group {{--w-1/2--}} mt-5">
                                 <label for="input">Input</label>
