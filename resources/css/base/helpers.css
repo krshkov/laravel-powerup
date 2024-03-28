@@ -19,4 +19,8 @@
     .hard-shadow-none{
         box-shadow: none !important;
     }
+
+    .vh100{
+        height: calc(100vh - 80px);
+    }
 }
