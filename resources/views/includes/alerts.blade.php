@@ -1,4 +1,4 @@
-<div id="notifications" class="fixed bottom-0 end-0 p-3">
+<div id="notifications" class="fixed bottom-0 end-0 p-3" style="z-index: 99999">
     @if (count($errors))
         @foreach($errors->all() as $error)
             <div class="alert-danger fadeIn">
