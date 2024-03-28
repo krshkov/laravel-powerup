@@ -57,6 +57,7 @@ input, select, textarea {
     @apply border-2 border-solid border-main shadow-2xl shadow-main p-2 bg-transparent;
     border-radius: 8px;
     max-width: var(--max-w-form);
+    outline: none !important;
 }
 
 input::placeholder, textarea::placeholder {
