@@ -56,17 +56,29 @@ class UserController extends Controller
             ])->validate();
 
             $authUser->password = Hash::make($request['password']);
+            // TODO: send email to inform the user
+        }
+
+        // Check if there is a new email
+        if ($request->email != $authUser->email) {
+            Validator::make($request->toArray(), [
+                'email' => [
+                    'required',
+                    'string',
+                    'email',
+                    'max:255',
+                    Rule::unique(User::class),
+                ]
+            ])->validate();
+
+            $authUser->email = $request['email'];
+            $authUser->email_verified_at = null;
+            $authUser->sendEmailVerificationNotification();
+            session()->flash('info', 'We have sent you email verification. Check your inbox.');
         }
 
         Validator::make($request->toArray(), [
             'name' => ['required', 'string', 'max:255'],
-            'email' => [
-                'required',
-                'string',
-                'email',
-                'max:255',
-                ($request->email != $authUser->email) ? Rule::unique(User::class) : '',
-            ],
             'phone' => [
                 'nullable',
                 'string',
@@ -80,7 +92,6 @@ class UserController extends Controller
 
 
         $authUser->name = $request['name'];
-        $authUser->email = $request['email'];
         $authUser->phone = $request['phone'] ?? "";
         $authUser->subscriber = $request['subscribe'] ?? false;
         $authUser->accepted_terms_and_conditions = $request['termsAccepted'] ?? false;
