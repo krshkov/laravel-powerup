@@ -50,7 +50,7 @@
                 </div>
 
                 <div class="mt-4">
-                    <input type="checkbox" name="termsAccepted" id="termsAccepted" value=1 required>
+                    <input type="checkbox" name="termsAccepted" id="termsAccepted" value=1 checked required>
                     <label for="termsAccepted">I have accepted the <a href="#">terms and conditions</a></label>
                     @error('termsAccepted')
                     <small>{{ $errors->first('termsAccepted') }}</small>
