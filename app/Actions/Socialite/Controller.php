@@ -13,6 +13,8 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Password;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Validation\ValidationException;
 use Laravel\Socialite\Facades\Socialite;
 
@@ -78,6 +80,7 @@ class Controller extends BaseController
                 'password_confirmation' => $generatedPwd,
                 'termsAccepted' => true,
                 'subscribe' => true,
+                'email_verified_at' => Carbon::now(),
             ];
 
             $user = $this->createNewUserController->create($data);

@@ -50,6 +50,7 @@ class CreateNewUser implements CreatesNewUsers
             'password' => Hash::make($input['password']),
             'subscriber' => $input['subscribe'] ?? false,
             'accepted_terms_and_conditions' => $input['termsAccepted'] ?? false,
+            'email_verified_at' => $input['email_verified_at'] ?? null,
         ]);
     }
 }
