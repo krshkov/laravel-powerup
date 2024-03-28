@@ -18,6 +18,17 @@ class User extends Authenticatable/* implements MustVerifyEmail*/
     use HasApiTokens, HasFactory, Notifiable;
 
     /**
+     * The attributes that must have a value
+     *
+     * @var array<int, string>
+     */
+    public array $mustFill = [
+        'name',
+        'phone',
+        'email',
+    ];
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>

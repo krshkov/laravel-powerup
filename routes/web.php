@@ -21,7 +21,7 @@ Route::get('/', function () {
 Route::get('/login/{provider}', [App\Actions\Socialite\Controller::class, 'redirectTo'])->where('provider', config('services.allowed_socialite_providers'))->name('socialite.redirect');
 Route::get('/login/{provider}/callback', [App\Actions\Socialite\Controller::class, 'handleCallback'])->where('provider', config('services.allowed_socialite_providers'))->name('socialite.callback');
 
-Route::middleware(['auth', 'verified'])->group(function () {
+Route::middleware(['auth', 'verified', 'user.data.verify'])->group(function () {
     Route::get('/home', function () {
         return view('home');
     })->name('home');
@@ -43,7 +43,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return view('components')->with(compact('modal_content'));
     })->name("components");
 
+    Route::get('/password/request/redirect', [\App\Http\Controllers\UserController::class, 'passwordRequestRedirect'])->name('password.request.redirect');
+
     Route::put('/user/set/lighting', [\App\Http\Controllers\UserController::class, 'setLightingMode']);
+    Route::get('/user/edit', [\App\Http\Controllers\UserController::class, 'edit'])->name('user.edit');
+    Route::put('/user/update', [\App\Http\Controllers\UserController::class, 'update'])->name('user.update');
 
     Route::middleware(['password.confirm'])->group(function () {
         // High value actions
