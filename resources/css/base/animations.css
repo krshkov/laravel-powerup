@@ -3,6 +3,7 @@
     - .anim_fadeIn -> Fade In (slow, fast)
     - .anim_fadeOut -> Fade Out (slow, fast)
     - .anim_fadeInOut -> Fade In and Out (slow, fast)
+    - .anim_fadeInStayOut -> Fade In and stay Out
     - .anim_scaleUp -> Scale Up
     - .anim_scaleDown -> Scale Down
     - .anim_wingLeft -> Wing Left
@@ -89,6 +90,28 @@
         }
         50% {
             opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .anim_fadeInStayOut {
+        animation: fadeInStayOut 10s linear 1 forwards;
+    }
+
+    @keyframes fadeInStayOut {
+        0% {
+            opacity: 0.9;
+        }
+        20%{
+            opacity: 1;
+        }
+        50% {
+            opacity: 1;
+        }
+        80% {
+            opacity: 0.5;
         }
         100% {
             opacity: 0;

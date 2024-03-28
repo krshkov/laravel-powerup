@@ -1,7 +1,7 @@
 <div id="notifications" class="fixed bottom-0 end-0 p-3" style="z-index: 99999">
     @if (count($errors))
         @foreach($errors->all() as $error)
-            <div class="alert-danger fadeIn">
+            <div class="alert-danger anim_fadeInStayOut">
                 <div class="alert-header">
                     <h4 class="alert-title">Error</h4>
                 </div>
@@ -13,7 +13,7 @@
     @endif
 
     @if (session('error'))
-            <div class="alert-danger fadeIn">
+            <div class="alert-danger anim_fadeInStayOut">
                 <div class="alert-header">
                     <h4 class="alert-title">Error</h4>
                 </div>
@@ -24,7 +24,7 @@
     @endif
 
     @if (session('success'))
-        <div class="alert-success fadeIn">
+        <div class="alert-success anim_fadeInStayOut">
             <div class="alert-header">
                 <h4 class="alert-title">Success</h4>
             </div>
@@ -35,7 +35,7 @@
     @endif
 
     @if (session('warning'))
-        <div class="alert-warning fadeIn">
+        <div class="alert-warning anim_fadeInStayOut">
             <div class="alert-header">
                 <h4 class="alert-title">Warning</h4>
             </div>
@@ -46,7 +46,7 @@
     @endif
 
     @if (session('info'))
-        <div class="alert-info fadeIn">
+        <div class="alert-info anim_fadeInStayOut">
             <div class="alert-header">
                 <h4 class="alert-title">Info</h4>
             </div>
@@ -57,7 +57,7 @@
     @endif
 
     @if (session('light'))
-        <div class="alert-light fadeIn">
+        <div class="alert-light anim_fadeInStayOut">
             <div class="alert-header">
                 <h4 class="alert-title">{{ config('app.name') }}</h4>
             </div>
@@ -68,7 +68,7 @@
     @endif
 
     @if (session('dark'))
-        <div class="alert-opposite fadeIn">
+        <div class="alert-opposite anim_fadeInStayOut">
             <div class="alert-header">
                 <h4 class="alert-title">{{ config('app.name') }}</h4>
             </div>
@@ -79,7 +79,7 @@
     @endif
 
     @if (session('main'))
-        <div class="alert-main fadeIn">
+        <div class="alert-main anim_fadeInStayOut">
             <div class="alert-header">
                 <h4 class="alert-title">{{ config('app.name') }}</h4>
             </div>
