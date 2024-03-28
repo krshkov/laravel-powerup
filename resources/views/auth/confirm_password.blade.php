@@ -13,7 +13,7 @@
                     <input type="password" name="password" id="password" required>
                     <small class="mt-2 ml-2">This is a high value action, please verify to proceed!</small>
                     @error('password')
-                    <small>{{ $errors->first('password') }}</small>
+                    <small class="ml-2">{{ $errors->first('password') }}</small>
                     @enderror
                 </div>
 
