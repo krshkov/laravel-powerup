@@ -12,7 +12,7 @@ use Laravel\Sanctum\HasApiTokens;
 /**
  * @method static create(array $array)
  */
-class User extends Authenticatable implements MustVerifyEmail
+class User extends Authenticatable /*implements MustVerifyEmail*/
     /* TODO: Uncomment implementation when mailer is ready to go! */
 {
     use HasApiTokens, HasFactory, Notifiable;
