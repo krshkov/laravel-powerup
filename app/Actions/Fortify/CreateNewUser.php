@@ -46,7 +46,7 @@ class CreateNewUser implements CreatesNewUsers
             'name' => $input['name'],
             'providers' => $input['providers'] ?? [],
             'email' => $input['email'],
-            'phone' => $input['phone'] ?? "",
+            'phone' => $input['phone'] ?? null,
             'password' => Hash::make($input['password']),
             'subscriber' => $input['subscribe'] ?? false,
             'accepted_terms_and_conditions' => $input['termsAccepted'] ?? false,
